@@ -1215,6 +1215,32 @@
     "minimatch" "^3.0.4"
     "strip-json-comments" "^3.1.1"
 
+"@fortawesome/fontawesome-common-types@^0.2.34":
+  "integrity" "sha512-XcIn3iYbTEzGIxD0/dY5+4f019jIcEIWBiHc3KrmK/ROahwxmZ/s+tdj97p/5K0klz4zZUiMfUlYP0ajhSJjmA=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.34.tgz"
+  "version" "0.2.34"
+
+"@fortawesome/fontawesome-svg-core@^1.2.32", "@fortawesome/fontawesome-svg-core@^1.2.34":
+  "integrity" "sha512-0KNN0nc5eIzaJxlv43QcDmTkDY1CqeN6J7OCGSs+fwGPdtv0yOQqRjieopBCmw+yd7uD3N2HeNL3Zm5isDleLg=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.34.tgz"
+  "version" "1.2.34"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.34"
+
+"@fortawesome/free-solid-svg-icons@^5.15.2":
+  "integrity" "sha512-ZfCU+QjaFsdNZmOGmfqEWhzI3JOe37x5dF4kz9GeXvKn/sTxhqMtZ7mh3lBf76SvcYY5/GKFuyG7p1r4iWMQqw=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.15.2.tgz"
+  "version" "5.15.2"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.34"
+
+"@fortawesome/react-fontawesome@^0.1.14":
+  "integrity" "sha512-4wqNb0gRLVaBm/h+lGe8UfPPivcbuJ6ecI4hIgW0LjI7kzpYB9FkN0L9apbVzg+lsBdcTf0AlBtODjcSX5mmKA=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/react-fontawesome/-/react-fontawesome-0.1.14.tgz"
+  "version" "0.1.14"
+  dependencies:
+    "prop-types" "^15.7.2"
+
 "@hapi/address@2.x.x":
   "integrity" "sha512-QD1PhQk+s31P1ixsX0H0Suoupp3VMXzIVMSwobR3F3MSUO2YCV0B7xqLcUw/Bh8yuvd3LhpyqLQWTNcRmp6IdQ=="
   "resolved" "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz"
@@ -4162,7 +4188,7 @@
   "resolved" "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz"
   "version" "0.1.3"
 
-"deepmerge@^4.2.2":
+"deepmerge@^4.0.0", "deepmerge@^4.2.2":
   "integrity" "sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg=="
   "resolved" "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.2.2.tgz"
   "version" "4.2.2"
@@ -7246,6 +7272,11 @@
     "pify" "^2.0.0"
     "strip-bom" "^3.0.0"
 
+"load-script@^1.0.0":
+  "integrity" "sha1-BJGTngvuVkPuSUp+PaPSuscMbKQ="
+  "resolved" "https://registry.npmjs.org/load-script/-/load-script-1.0.0.tgz"
+  "version" "1.0.0"
+
 "loader-runner@^2.4.0":
   "integrity" "sha512-Jsmr89RcXGIwivFY21FcRrisYZfvLMTWx5kOLc+JTxtpBOG6xML0vzbc6SEQG2FO9/4Fc3wW4LVcB5DmGflaRw=="
   "resolved" "https://registry.yarnpkg.com/loader-runner/-/loader-runner-2.4.0.tgz"
@@ -7461,6 +7492,11 @@
   "integrity" "sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g="
   "resolved" "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz"
   "version" "0.3.0"
+
+"memoize-one@^5.1.1":
+  "integrity" "sha512-HKeeBpWvqiVJD57ZUAsJNm71eHTykffzcLZVYWiVfQeI1rJtuEaS7hQiEpWfVVk18donPwJEcFKIkCmPJNOhHA=="
+  "resolved" "https://registry.npmjs.org/memoize-one/-/memoize-one-5.1.1.tgz"
+  "version" "5.1.1"
 
 "memory-fs@^0.4.1":
   "integrity" "sha1-OpoguEYlI+RHz7x+i7gO1me/xVI="
@@ -9465,6 +9501,11 @@
   "resolved" "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz"
   "version" "6.0.9"
 
+"react-fast-compare@^3.0.1":
+  "integrity" "sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA=="
+  "resolved" "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.0.tgz"
+  "version" "3.2.0"
+
 "react-is@^16.6.0", "react-is@^16.7.0", "react-is@^16.8.0 || ^17.0.0", "react-is@^16.8.1":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
   "resolved" "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz"
@@ -9475,12 +9516,23 @@
   "resolved" "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz"
   "version" "17.0.1"
 
+"react-player@^2.8.2":
+  "integrity" "sha512-AiCvWJGpFxgxjwMxDMiaeTyL2IgDaKuPZfERzNULGPx7X67Mh9D0UqKZG6YHqJQ1KbpbCdE0VBtICrzRxr28pg=="
+  "resolved" "https://registry.npmjs.org/react-player/-/react-player-2.8.2.tgz"
+  "version" "2.8.2"
+  dependencies:
+    "deepmerge" "^4.0.0"
+    "load-script" "^1.0.0"
+    "memoize-one" "^5.1.1"
+    "prop-types" "^15.7.2"
+    "react-fast-compare" "^3.0.1"
+
 "react-refresh@^0.8.3", "react-refresh@>=0.8.3 <0.10.0":
   "integrity" "sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg=="
   "resolved" "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz"
   "version" "0.8.3"
 
-"react-router-dom@^5.2.0":
+"react-router-dom@^5.2.0", "react-router-dom@>=4":
   "integrity" "sha512-gxAmfylo2QUjcwxI63RhQ5G85Qqt4voZpUXSEqCwykV0baaOTQDR1f0PmY8AELqIyVc0NEZUj0Gov5lNGcXgsA=="
   "resolved" "https://registry.npmjs.org/react-router-dom/-/react-router-dom-5.2.0.tgz"
   "version" "5.2.0"
@@ -9492,6 +9544,13 @@
     "react-router" "5.2.0"
     "tiny-invariant" "^1.0.2"
     "tiny-warning" "^1.0.0"
+
+"react-router-hash-link@^2.4.0":
+  "integrity" "sha512-HGbB9kfODHKsHvMVsPbqDr057V4xg4TNNRaQcezsFMKitwHaaU51cM2+gDyX45y9YLLPbovELz2rpNx2C3Frng=="
+  "resolved" "https://registry.npmjs.org/react-router-hash-link/-/react-router-hash-link-2.4.0.tgz"
+  "version" "2.4.0"
+  dependencies:
+    "prop-types" "^15.7.2"
 
 "react-router@5.2.0":
   "integrity" "sha512-smz1DUuFHRKdcJC0jobGo8cVbhO3x50tCL4icacOlcwDOEQPq4TMqwx3sY1TP+DvtTgz4nm3thuo7A+BK2U0Dw=="
@@ -9585,7 +9644,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0", "react@^17.0.1", "react@>= 16", "react@>=15", "react@>=16.6.0", "react@17.0.1":
+"react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0", "react@^17.0.1", "react@>= 16", "react@>=15", "react@>=16.6.0", "react@>=16.x", "react@17.0.1":
   "integrity" "sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w=="
   "resolved" "https://registry.yarnpkg.com/react/-/react-17.0.1.tgz"
   "version" "17.0.1"
