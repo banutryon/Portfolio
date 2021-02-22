@@ -14,7 +14,7 @@ export default createMuiTheme({
     palette: {
         common: { blue: `${myBlue}`, green: `${myGreen}`},
         primary: { main: `${myBlue}`},
-        secondary: { main: `${myGreen}`},
+        secondary: { main: `${myGreenBlue}`},
     }, 
     typography: {
         p: {}, 

@@ -5,8 +5,9 @@ import theme from './ui/Theme'
 import { ThemeProvider } from "@material-ui/styles";
 import HeroBanner from "./HeroBanner"
 import About from "./About"
-import Tech from "./techonoligies"
+import Tech from "./Techonoligies"
 import Projects from './Projects'
+import Passions from './passions'
 import { makeStyles } from "@material-ui/core/styles";
 const styles = makeStyles ((theme) => ({
   container: {
@@ -30,6 +31,7 @@ export default function App() {
         <About />
         <Tech />
         <Projects />
+        <Passions />
     	</BrowserRouter>
       </ThemeProvider>
     

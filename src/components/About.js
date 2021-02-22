@@ -19,7 +19,7 @@ const styles = makeStyles ((theme) => ({
         padding: "6rem 6rem",
     },
     avatar: {
-        height: "200px",
+        height: "300px",
         borderRadius: "50%",
         [theme.breakpoints.up("lg")]: {
             marginRight: "10rem",

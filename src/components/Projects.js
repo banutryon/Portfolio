@@ -13,23 +13,27 @@ import P5 from "./../assets/tesla.mov"
 
 const styles = makeStyles ((theme) => ({
     media1: {
-        width: "50rem",
-        float: 'right',
+        width: "30rem",
+        // float: 'right',
         margin: "1rem",
+        position: "relative",
+        top: "5rem",
+
         
     }, 
     media2: {
-        width: "45rem",
+        width: "30rem",
         position: "relative",
-        top: "12rem",
+        top: "5rem",
         margin: "1rem",
 
     }, 
     media3: {
-        width: "80rem",
+        width: "40rem",
+        margin: "2rem",
         position: "relative",
-        margin: "0 auto",
-        top: "16rem",
+        // margin: "0 auto",
+        top: "5rem",
     }
 
 
@@ -53,7 +57,15 @@ export default function Projects() {
                 The Last example is a Tesla Battery calculator for the Tesla Model S. I used React Native with Redux on the front end and used Mongodb for the backend. I also custom-built the api to support the new Tesla Model S that will come out this year.  
 
                 </Typography>
-                
+        <Grid
+        id="about"
+        className={classes.techContainer}
+        container
+        justify="space-between"
+        alignItems="center"
+        direction="row"
+        
+      >      
         <CardMedia
         
             component='video'
@@ -75,7 +87,7 @@ export default function Projects() {
             src={P5}
             autoPlay
         />
-           
+        </Grid>  
 		</React.Fragment>
 	);
 }

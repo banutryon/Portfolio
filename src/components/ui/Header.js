@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "./../../assets/mtn.png";
+import Logo from "./../../assets/Logo.png";
 import { HashLink as Link } from "react-router-hash-link";
 
 // MUI-CORE
@@ -38,10 +38,11 @@ export default function Header() {
 
 const routes = [
     { id: "0", name: "Home", link: "/" },
-    { id: "1", name: "Techonoligies", link: "#tech" },
+    { id: "1", name: "Techonoligies", link: "#tech", },
     { id: "2", name: "About", link: "#about" },
     { id: "3", name: "Projects", link: "#projects" },
-    { id: "4", name: "Resume", link: "#resume" },
+    { id: "4", name: "Passions", link: "#passions" },
+    { id: "5", name: "Resume", link: "#resume", a: "https://docs.google.com/document/d/1qlqkdNzLdQAdUsgCOVMLiXE1Dx4JsFdsAffA7Ugj3gQ/edit"},
 ];
 
 const tabs = (
