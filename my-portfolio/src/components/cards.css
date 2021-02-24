@@ -1,0 +1,143 @@
+.cards {
+    padding: 4rem;
+    background: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /* max-width: 1120px; */
+    width: 100%;
+    margin: 20px auto;
+}
+
+.cardsWrapper {
+    position: relative;
+    margin: 50px 0 45px;
+    
+}
+
+.cardsItems {
+    margin-bottom: 24px;
+    
+}
+
+.cardsItem {
+    display: flex;
+    flex: 1;
+    margin: 1rem 1rem;
+    border-radius: 10px;
+
+}
+
+.cardsItemLink {
+    display: flex;
+    flex-flow: column;
+    align-items: baseline;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 25rem;
+    box-shadow: 0 6px 20px rgba(28, 54, 103, 0.5);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 350px;
+    /* background-color: rgba(18, 159, 247, 0.502); */
+   
+   
+}
+
+.cardsItemPicWrap {
+    position: relative;
+    width: 100%;
+    padding-top: 67%;
+    overflow: hidden;
+}
+
+.fadeImg {
+    animation-name: fade-img;
+    animation-duration: 2s;
+}
+
+.cardsItemPicWrap::after {
+    content: attr(data-category);
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    padding: 6px 8px;
+    max-width: calc((100%) - 60px);
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1f98f4;
+    box-sizing: border-box;
+    
+}
+
+.cardsItemVid {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 90%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+}
+
+
+.cardsItemVid:hover {
+    transform: scale(1.08);
+}
+
+.cardsItemInfo {
+    height: 70px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+}
+
+.cardsItemText {
+    margin-top: 40px;
+    color: black;
+    font-size: 14px;
+    line-height: 24px;
+    
+}
+
+@media only screen and (min-width: 1200px) {
+    .contentBlogContainer {
+        width: 84%;
+    }
+    .cardsItemLink {
+        width: 30rem;
+        height: 400px;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    .cardsItems {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .cardsItem {
+        margin-bottom: 2rem;
+    }
+}
