@@ -1,9 +1,8 @@
 import React from "react";
-import "../../App.css";
-
+import "./about.css";
 function About() {
 	return (
-		<>
+		<section className="container" id="about">
 			<h1>About me</h1>
 			<p>
 				As a software engineer, I will take my previous experiences and apply
@@ -17,7 +16,7 @@ function About() {
 				engineer as I can look at the problem/project from many different angles
 				before even beginning to write any code.
 			</p>
-		</>
+		</section>
 	);
 }
 

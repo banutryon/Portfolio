@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "./button";
 import "./heroSection.css";
-
+import { Link } from "react-scroll";
 function HeroSection() {
 	// const [button, setButton] = useState(true);
 
@@ -12,14 +12,10 @@ function HeroSection() {
 				<h1>Hello, I'm Banu Tryon.</h1>
 				<h1>I'm a full-stack web developer</h1>
 			</div>
-			<div className="heroBtns">
-				<Button
-					className="btns"
-					buttonStyle="btn--outline"
-					buttonSize="btn--large"
-				>
+			<div className="heroLink">
+				<Link to="about" smooth={true} duration={1000}>
 					Learn about me
-				</Button>
+				</Link>
 			</div>
 		</div>
 	);

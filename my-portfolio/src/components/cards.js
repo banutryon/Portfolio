@@ -4,7 +4,7 @@ import CardItem from "./cardItem";
 
 function Cards() {
 	return (
-		<div className="cards">
+		<section className="cards" id="projects">
 			<h1>Check out some of my projects!</h1>
 			<div className="cardsContainer">
 				<div className="cardsrapper">
@@ -37,7 +37,7 @@ function Cards() {
 					</ul>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
 

@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import Logo from "../images-videos/Logo.png";
+import { Link } from "react-scroll";
 import { Button } from "./button";
 import "./navbar.css";
-
+import { animateScroll as scroll } from "react-scroll";
 function Navbar() {
 	const [click, setClick] = useState(false);
 	const [button, setButton] = useState(true);
 
 	const handleClick = () => setClick(!click);
+
 	const closeMobileMenu = () => setClick(false);
 
 	const showButton = () => {
@@ -27,36 +27,64 @@ function Navbar() {
 		<>
 			<nav className="navbar">
 				<div className="navContainer">
-					<Link to="/" className="navbarLogo" onClick={closeMobileMenu}>
-						<img className="navbarImg" src={Logo} alt={"Logo"} />
+					<Link className="navbarLogo">
+						<img
+							className="navbarImg"
+							src="/Logo.png"
+							alt="Logo"
+							onClick={() => scroll.scrollToTop()}
+						/>
 					</Link>
 					<div className="menuIcon" onClick={handleClick}>
 						<i className={click ? "fas fa-times" : "fas fa-bars"} />
 					</div>
 					<ul className={click ? "navMenu active" : "navMenu"}>
 						<li className="navItem">
-							<Link to="/" className="navLinks" onClick={closeMobileMenu}>
-								Home
+							<Link
+								to="projects"
+								smooth={true}
+								duration={1000}
+								className="navLinks"
+								onClick={closeMobileMenu}
+							>
+								PROJECTS
 							</Link>
 						</li>
 						<li className="navItem">
-							<Link to="/" className="navLinks" onClick={closeMobileMenu}>
-								Projects
-							</Link>
-						</li>
-						<li className="navItem">
-							<Link to="/About" className="navLinks" onClick={closeMobileMenu}>
-								About Me
+							<Link
+								to="about"
+								smooth={true}
+								duration={1000}
+								className="navLinks"
+								onClick={closeMobileMenu}
+							>
+								ABOUT
 							</Link>
 						</li>
 
 						<li>
-							<Link to="/Tech" className="navLinks" onClick={closeMobileMenu}>
-								Technologies
+							<Link
+								to="tech"
+								smooth={true}
+								duration={1000}
+								className="navLinks"
+								onClick={closeMobileMenu}
+							>
+								TECHNOLOGIES
+							</Link>
+						</li>
+						<li>
+							<Link
+								to="tech"
+								smooth={true}
+								duration={1000}
+								className="navLinks"
+								onClick={closeMobileMenu}
+							>
+								CONTACT ME
 							</Link>
 						</li>
 					</ul>
-					{button && <Button buttonStyle="btn--outline">Contact Me</Button>}
 				</div>
 			</nav>
 		</>

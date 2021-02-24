@@ -1,9 +1,9 @@
 import React from "react";
-import "../../App.css";
+import "./tech.css";
 
 function Tech() {
 	return (
-		<>
+		<section className="container" id="tech">
 			<ul>
 				<li>
 					<img src="/Icons/atom.png" alt="technologies" />
@@ -45,7 +45,7 @@ function Tech() {
 					<img src="/Icons/slack.png" alt="technologies" />
 				</li>
 			</ul>
-		</>
+		</section>
 	);
 }
 
