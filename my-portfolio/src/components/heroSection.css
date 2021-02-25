@@ -10,7 +10,7 @@ video {
 
 .heroContainer {
     /* background: url('images-videos/headerVideo.mp4') center center/center no-repeat; */
-    height: 100vh;
+    height: 112vh;
     width: 100%;
     display: flex;
     flex-direction: column;

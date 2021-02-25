@@ -41,17 +41,6 @@ function Navbar() {
 					<ul className={click ? "navMenu active" : "navMenu"}>
 						<li className="navItem">
 							<Link
-								to="projects"
-								smooth={true}
-								duration={1000}
-								className="navLinks"
-								onClick={closeMobileMenu}
-							>
-								PROJECTS
-							</Link>
-						</li>
-						<li className="navItem">
-							<Link
 								to="about"
 								smooth={true}
 								duration={1000}
@@ -71,6 +60,17 @@ function Navbar() {
 								onClick={closeMobileMenu}
 							>
 								TECHNOLOGIES
+							</Link>
+						</li>
+						<li className="navItem">
+							<Link
+								to="projects"
+								smooth={true}
+								duration={1000}
+								className="navLinks"
+								onClick={closeMobileMenu}
+							>
+								PROJECTS
 							</Link>
 						</li>
 						<li>
