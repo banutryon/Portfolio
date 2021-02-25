@@ -5,10 +5,6 @@ function About() {
 		<section className="container" id="about">
 			<h1>About</h1>
 			<div className="aboutContainer">
-				{/* <div className="line5"></div>
-				<div className="line6"></div>
-				<div className="line7"></div> */}
-
 				<div className="aboutIconMe">
 					<img src="/Icons/me.png" alt="aboutIcon" />
 
