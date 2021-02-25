@@ -4,41 +4,34 @@
   padding: 0;
   font-family: 'Share Tech Mono';
 }
+#root {
+  position:relative;
+  z-index: -3;
+}
+body {
+   position:relative;
+   z-index: -3;
+}
+#about,
+#tech,
+#contact {
+  height: 100vh;
+  width: 100vw;
 
-.home,
-.services,
-.products,
-.sign-up {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
+}
+#hero {
+  height: 65vh;
 }
 
-.services {
-  /* background-image: url('/images/img-2.jpg'); */
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+#about {
+  background-color: white;
 }
 
-.products {
-  /* background-image: url('/images/img-1.jpg'); */
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+#tech {
+  background-color: ghostwhite;
 }
 
-.sign-up {
-  /* background-image: url('/images/img-8.jpg'); */
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+#projects {
+  background-color: rgba(205, 205, 205, 0.988);
+  height: 200vh;
 }

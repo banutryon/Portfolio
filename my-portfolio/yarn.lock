@@ -9301,6 +9301,13 @@
   "resolved" "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz"
   "version" "6.0.9"
 
+"react-grid-system@^7.1.1":
+  "integrity" "sha512-ttKTdme+eW0fyFX7LKQmc9M/ujHfs99Kiv5zgid7htdEPxUbjuBbEDgi1FaWwcciCgkRgBJguQ+WYqsGGJdGRw=="
+  "resolved" "https://registry.npmjs.org/react-grid-system/-/react-grid-system-7.1.1.tgz"
+  "version" "7.1.1"
+  dependencies:
+    "prop-types" "^15.7.2"
+
 "react-is@^16.6.0", "react-is@^16.7.0", "react-is@^16.8.1":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
   "resolved" "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz"
@@ -9419,7 +9426,7 @@
     "lodash.throttle" "^4.1.1"
     "prop-types" "^15.7.2"
 
-"react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^15.5.4 || ^16.0.0", "react@^17.0.1", "react@>= 16", "react@>=15", "react@>=16.x", "react@17.0.1":
+"react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^15.5.4 || ^16.0.0", "react@^16.8.0", "react@^17.0.1", "react@>= 16", "react@>=15", "react@>=16.x", "react@17.0.1":
   "integrity" "sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w=="
   "resolved" "https://registry.yarnpkg.com/react/-/react-17.0.1.tgz"
   "version" "17.0.1"

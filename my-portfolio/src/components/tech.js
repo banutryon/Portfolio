@@ -3,16 +3,10 @@ import "./tech.css";
 
 function Tech() {
 	return (
-		<section className="container" id="tech">
-			<ul>
-				<li>
-					<img src="/Icons/atom.png" alt="technologies" />
-				</li>
+		<section className="techSection" id="tech">
+			<ul className="techContainer">
 				<li>
 					<img src="/Icons/css.png" alt="technologies" />
-				</li>
-				<li>
-					<img src="/Icons/figma.png" alt="technologies" />
 				</li>
 				<li>
 					<img src="/Icons/html.png" alt="technologies" />
@@ -43,6 +37,9 @@ function Tech() {
 				</li>
 				<li>
 					<img src="/Icons/slack.png" alt="technologies" />
+				</li>
+				<li>
+					<img src="/Icons/figma.png" alt="technologies" />
 				</li>
 			</ul>
 		</section>

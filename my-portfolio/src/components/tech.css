@@ -1,0 +1,22 @@
+.techContainer {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* background-color: lightgray; */
+  justify-content:center;
+   padding: 4em 0 2em 0;
+  
+}
+
+.techContainer li {
+    width: 100px;
+    margin: 30px 5%;
+    list-style-type: none;
+
+    
+}
+
+/* .techSection {
+  
+    background-color: lightgray;
+} */
