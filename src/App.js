@@ -5,6 +5,8 @@ import About from "./components/about";
 import HeroSection from "./components/heroSection";
 import Cards from "./components/cards";
 import Tech from "./components/tech";
+import Footer from "./components/footer";
+
 function App() {
 	return (
 		<>
@@ -14,6 +16,7 @@ function App() {
 
 			<Tech />
 			<Cards />
+			<Footer />
 		</>
 	);
 }

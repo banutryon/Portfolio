@@ -12,18 +12,17 @@
     padding: 4em 0 2em 0;
 }
 
-
-.pTop {
-    display: block;
-    margin: 15em auto 0 auto;
-    max-width: 80vw;
+.text {
+    position: relative;
+    top: 130px;
+    margin: 3em;
 }
-.pBottom {
-    display: block;
-    margin: 0 auto 5em auto;
-    max-width: 80vw;
-
+.p {
+    animation: pScroll 2s;
+    margin: 10px auto 10px auto;
+    max-width: 800px;
 }
+
 .container img {
     width: 100%;
     height: 100%;
@@ -37,9 +36,9 @@
     flex-direction: row;
     justify-content:space-around;
     width: 100vw;
-    max-width: 50em;
+    max-width: 40em;
     /* height: 20em; */
-    margin: 10px auto;
+    margin: -20px auto;
     /* border: solid 3px red; */
 }
 
@@ -233,4 +232,17 @@ top: 589px;
 
 border: 1px solid #000000;
 transform: rotate(-156.25deg);
+}
+
+
+
+
+@keyframes pScroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }

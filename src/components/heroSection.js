@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "./button";
 import "./heroSection.css";
 import { Link } from "react-scroll";
 function HeroSection() {

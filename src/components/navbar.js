@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-// import { Button } from "./button";
 import "./navbar.css";
 import { animateScroll as scroll } from "react-scroll";
 function Navbar() {
