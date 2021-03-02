@@ -7,7 +7,8 @@ function HeroSection() {
 	return (
 		<section className="techSection" id="hero">
 			<div className="heroContainer">
-				<video src="/images-videos/hV.mp4" autoPlay loop muted />
+				<img className="sky" src="images-videos/sky.jpg" alt="background" />
+
 				<div className="intro">
 					<h1>Hello, I'm Banu Tryon.</h1>
 					<h1>I'm a full-stack web developer</h1>

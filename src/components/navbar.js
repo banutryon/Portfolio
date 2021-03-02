@@ -1,30 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./navbar.css";
 import { animateScroll as scroll } from "react-scroll";
 function Navbar() {
 	const [click, setClick] = useState(false);
-	const [button, setButton] = useState(true);
+	// const [button, setButton] = useState(true);
 
 	const handleClick = () => setClick(!click);
 
 	const closeMobileMenu = () => setClick(false);
 
-	const showButton = () => {
-		if (window.innerWidth <= 960) {
-			setButton(false);
-		} else {
-			setButton(true);
-		}
-	};
-	useEffect(() => {
-		showButton();
-	}, []);
+	// const showButton = () => {
+	// 	if (window.innerWidth <= 960) {
+	// 		setButton(false);
+	// 	} else {
+	// 		setButton(true);
+	// 	}
+	// };
+	// useEffect(() => {
+	// 	showButton();
+	// }, []);
 
-	window.addEventListener("resize", showButton);
+	// window.addEventListener("resize", showButton);
 	return (
 		<>
-			<nav className="navbar">
+			<nav className="nav">
 				<div className="navContainer">
 					<Link className="navbarLogo">
 						<img
@@ -37,7 +37,7 @@ function Navbar() {
 					<div className="menuIcon" onClick={handleClick}>
 						<i className={click ? "fas fa-times" : "fas fa-bars"} />
 					</div>
-					<ul className={click ? "navMenu active" : "navMenu"}>
+					<ul id="mainListDiv" className={click ? "navMenu active" : "navMenu"}>
 						<li className="navItem">
 							<Link
 								to="about"
@@ -74,7 +74,7 @@ function Navbar() {
 						</li>
 						<li>
 							<Link
-								to="tech"
+								to="contact"
 								smooth={true}
 								duration={1000}
 								className="navLinks"
