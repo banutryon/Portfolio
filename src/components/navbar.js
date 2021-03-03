@@ -29,7 +29,7 @@ function Navbar() {
 					<Link className="navbarLogo">
 						<img
 							className="navbarImg"
-							src="/Logo.png"
+							src="/newLogo.png"
 							alt="Logo"
 							onClick={() => scroll.scrollToTop()}
 						/>

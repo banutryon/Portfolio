@@ -5,7 +5,7 @@ import CardItem from "./cardItem";
 function Cards() {
 	return (
 		<section className="cards" id="projects">
-			<h1>Check out some of my projects!</h1>
+			<h1 className="h1">Check out some of my projects!</h1>
 			<div className="cardsContainer">
 				<div className="cardsrapper">
 					<ul className="cardsItems">

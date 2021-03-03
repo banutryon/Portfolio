@@ -1,11 +1,14 @@
 .nav {
-    background: linear-gradient(90deg, rgb(35, 65, 110) 0%, rgb(4, 14, 26) 100%);
-    height: 80px;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(4, 14, 26) 100%);
+    height: 70px;
+    width: 100vw;
     /* display: flex;
     justify-content: center;
     align-items: center; */
     font-size: 1.2rem;
-    position: sticky;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
     top: 0;
     z-index: 999;
   }
@@ -20,14 +23,16 @@
   }
   
   .navbarLogo {
-  
-    margin: 10px 0;
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
     cursor: pointer;
     text-decoration: none;
     
   }
   .navbarImg {
-      width: 32%;
+      width: 70%;
   }
   
   .fa-typo3 {
