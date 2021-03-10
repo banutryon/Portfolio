@@ -2,88 +2,122 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./navbar.css";
 import { animateScroll as scroll } from "react-scroll";
+import $ from "jquery";
 function Navbar() {
 	const [click, setClick] = useState(false);
-	// const [button, setButton] = useState(true);
+	const [navbar, setNavbar] = useState(false);
+	const [logo, setLogo] = useState(false);
 
-	const handleClick = () => setClick(!click);
+	const closeMobileMenu = () => {
+		setClick(!click);
+	};
 
-	const closeMobileMenu = () => setClick(false);
+	const hambuger = () => {
+		$(".navTrigger").click(function () {
+			$(".main_list").toggleClass("show_list");
+			$(this).toggleClass("active");
 
-	// const showButton = () => {
-	// 	if (window.innerWidth <= 960) {
-	// 		setButton(false);
-	// 	} else {
-	// 		setButton(true);
-	// 	}
-	// };
-	// useEffect(() => {
-	// 	showButton();
-	// }, []);
+			$("#mainListDiv").fadeIn();
+		});
+	};
+	const changeBackground = () => {
+		if (window.scrollY >= 50) {
+			setNavbar(true);
+		} else {
+			setNavbar(false);
+		}
+	};
+	const changeLogo = () => {
+		if (window.scrollY >= 50) {
+			setLogo(true);
+		} else {
+			setLogo(false);
+		}
+	};
 
-	// window.addEventListener("resize", showButton);
+	window.addEventListener("scroll", changeBackground);
+	window.addEventListener("scrollLogo", changeLogo);
+	window.addEventListener("close", closeMobileMenu);
 	return (
 		<>
-			<nav className="nav">
+			<nav className={navbar ? "nav scroll" : "nav"}>
 				<div className="navContainer">
-					<Link className="navbarLogo">
+					<Link className="navLogo scrollLogo">
 						<img
-							className="navbarImg"
+							className={
+								logo ? "navImg logoWhite scrollLogo" : "navImg logoWhite"
+							}
 							src="/newLogo.png"
 							alt="Logo"
 							onClick={() => scroll.scrollToTop()}
 						/>
+						<img
+							className={
+								logo ? "navImg logoGreen scrollLogo" : "navImg logoGreen"
+							}
+							src="/logoHover.png"
+							alt="Logo"
+							onClick={() => scroll.scrollToTop()}
+						/>
 					</Link>
-					<div className="menuIcon" onClick={handleClick}>
-						<i className={click ? "fas fa-times" : "fas fa-bars"} />
-					</div>
-					<ul id="mainListDiv" className={click ? "navMenu active" : "navMenu"}>
-						<li className="navItem">
-							<Link
-								to="about"
-								smooth={true}
-								duration={1000}
-								className="navLinks"
-								onClick={closeMobileMenu}
-							>
-								ABOUT
-							</Link>
-						</li>
+					<div
+						id="mainListdiv"
+						class={click ? "main_list " : "main_list close"}
+					>
+						<ul className="navlinks">
+							<li className="navItem">
+								<Link
+									to="about"
+									smooth={true}
+									duration={1000}
+									className="li"
+									onClick={closeMobileMenu}
+								>
+									ABOUT
+								</Link>
+							</li>
 
-						<li>
-							<Link
-								to="tech"
-								smooth={true}
-								duration={1000}
-								className="navLinks"
-								onClick={closeMobileMenu}
-							>
-								TECHNOLOGIES
-							</Link>
-						</li>
-						<li className="navItem">
-							<Link
-								to="projects"
-								smooth={true}
-								duration={1000}
-								className="navLinks"
-								onClick={closeMobileMenu}
-							>
-								PROJECTS
-							</Link>
-						</li>
-						<li>
-							<Link
-								to="contact"
-								smooth={true}
-								duration={1000}
-								className="navLinks"
-								onClick={closeMobileMenu}
-							>
-								CONTACT ME
-							</Link>
-						</li>
-					</ul>
+							<li className="navItem">
+								<Link
+									to="tech"
+									smooth={true}
+									duration={1000}
+									className="li"
+									onClick={closeMobileMenu}
+								>
+									TECHNOLOGIES
+								</Link>
+							</li>
+							<li className="navItem">
+								<Link
+									to="projects"
+									smooth={true}
+									duration={1000}
+									className="li"
+									onClick={closeMobileMenu}
+								>
+									PROJECTS
+								</Link>
+							</li>
+							<li className="navItem">
+								<Link
+									to="contact"
+									smooth={true}
+									duration={1000}
+									className="li"
+									onClick={closeMobileMenu}
+								>
+									CONTACT ME
+								</Link>
+							</li>
+						</ul>
+					</div>
+
+					<span className="navTrigger" onClick={hambuger}>
+						<i></i>
+						<i></i>
+						<i></i>
+					</span>
 				</div>
 			</nav>
 		</>

@@ -2,8 +2,8 @@
     object-fit: cover;
     width: 100vw;
     height: 65vh;
-    z-index: -3;
     position: fixed;
+    z-index: -3;
     top: 0;
    
 }
