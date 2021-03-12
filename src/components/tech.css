@@ -9,13 +9,23 @@
 }
 
 .techContainer li {
-    width: 100px;
+    /* width: 64px; */
     margin: 30px 5%;
     list-style-type: none;
+    
 
     
 }
+.tech_h1 {
+  text-align: center;
+  padding-top: 130px;
+  font-size: 30px;
+}
+.icon {
+    width: 64px;
+    height: 64px;
 
+}
 /* .techSection {
   
     background-color: lightgray;

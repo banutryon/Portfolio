@@ -3,7 +3,7 @@
     /* height: 100vh; */
     /* text-align: center; */
     position:relative;
-    /* z-index: -2; */
+    z-index: -2;
     
 
 }
@@ -23,7 +23,9 @@
     margin: 10px auto 10px auto;
     max-width: 800px;
 }
-
+.about {
+    font-size: 30px;
+}
 .container img {
     width: 100%;
     height: 100%;
@@ -57,37 +59,67 @@
 
 .popup {
     position: absolute;
-    /* z-index: 2; */
+    z-index: 1;
     padding: 10px;
     background-color: rgba(28, 28, 28, 0.892);
     border-radius: 5px;
-    max-width: 45%;
-    font-size: 10px;
+    max-width: 60%;
+    font-size: 12px;
     display: none;
     color: ghostwhite;
     text-align: center;
+    margin-right: 10px;
+}
+.speech-bubble {
+    /* position: relative; */
+    font-family: sans-serif;
+    line-height: 24px;
+    background: #d78b2d;
+    border-radius: 40px;
+    padding: 24px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.speech-bubble:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #d78b2d;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #d78b2d;
+    border-bottom: 20px solid transparent;
+    bottom: -24px;
+}
+.speech-bubble-left:before {
+    left: 32px;
+}
+.speech-bubble-right:before {
+    left: 200px;
 }
 .popup1 {
-    left: 5%;
-    top: 17%;
+    left: 30px;
+    top: 130px;
+
 }
 .popup2 {
-    left: 10%;
-    top: 44%;
-   
+    left: 130px;
+    top: 220px;
+
 }
 .popup3 {
-    left: 25%;
-    top: 13.5%;
-    
+    left: 225px;
+    top: 60px;
+
 }
 .popup4 {
-    left: 45%;
-    top: 44%;
+    left: 150px;
+    top: 220px; 
 }
 .popup5 {
-    left: 45%;
-    top: 15.8%;
+    left: 230px;
+    top: 120px;
 }
 .aboutIconMe:hover+.popup {
     display: block;
@@ -105,15 +137,15 @@
     display: block;
 }
 .aboutIcon1 {
-   position: relative;
-   width: 20%;
-   max-width: 180px;
-   height: 30%;
-   margin: 10px;
-   top: 8em;
+    position: relative;
+    width: 20%;
+    max-width: 180px;
+    height: 30%;
+    margin: 10px;
+    top: 8em;
 
-   background: rgba(48, 106, 174);
-     border-radius: 50%;
+    background: rgba(48, 106, 174);
+        border-radius: 50%;
 }
 .aboutIcon2 {
     position: relative;
@@ -124,7 +156,7 @@
     top: 1em;
 
     background: rgba(48, 106, 174);
-     border-radius: 50%;
+    border-radius: 50%;
 }
 .aboutIcon3 {
     position: relative;
@@ -135,18 +167,18 @@
     top: 8em;
 
     background: rgba(48, 106, 174);
-     border-radius: 50%;
+    border-radius: 50%;
 }
 .aboutIcon4 {
-  position: relative;
-  width: 21%;
-  max-width: 180px;
-  height: 30%;
-  margin: 10px;
-  top: 1em;
+    position: relative;
+    width: 21%;
+    max-width: 180px;
+    height: 30%;
+    margin: 10px;
+    top: 1em;
 
-  background: rgba(48, 106, 174);
-     border-radius: 50%;
+    background: rgba(48, 106, 174);
+    border-radius: 50%;
 }
 .aboutIcon4 img{
     width: 100%;
@@ -234,7 +266,52 @@ top: 589px;
 border: 1px solid #000000;
 transform: rotate(-156.25deg);
 }
+@media only screen and (min-width: 1024px) {
+.popup {
+    max-width: 30%;
+}
+.popup1 {
+    left: 500px;
+    top: 140px;
+    /* display: none; */
 
+}
+
+.popup2 {
+    left: 620px;
+    top: 260px;
+    /* display: none; */
+
+}
+
+.popup3 {
+    left: 740px;
+    top: 118px;
+    /* display: none; */
+}
+
+.popup4 {
+    left: 700px;
+    top: 250px;
+        /* display: none; */
+}
+
+.popup5 {
+    left: 830px;
+    top: 150px;
+        /* display: none; */
+}
+.text {
+    display: block;
+    margin: 50px auto 5px auto;
+    width: 80%;
+}
+.p {
+    /* animation: pScroll 2s; */
+    max-width: 600px;
+
+}
+}
 
 
 
