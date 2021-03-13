@@ -26,9 +26,13 @@
     font-size: 30px;
     color: white;
 }
+.icon_v1 {
+    width: 44px;
+    height: 44px;
+}
 .icon {
-    width: 64px;
-    height: 64px;
+    width: 44px;
+    height: 44px;
     
 
 }
@@ -46,6 +50,7 @@ float: left;
 .p_tag {
 text-align: justify;
 color: white;
+font-size: 10px;
 }
 .cert {
     width: 100%;}

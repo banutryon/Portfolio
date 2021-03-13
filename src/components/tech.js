@@ -17,22 +17,26 @@ function Tech() {
 			<h1 className="tech_h1">Technologies</h1>
 			<ul className="techContainer">
 				<li>
-					<img src="/Icons/css.png" alt="technologies" />
+					<img className="icon_v1" src="/Icons/css.png" alt="technologies" />
 				</li>
 				<li>
-					<img className="html" src="/Icons/html-5.png" alt="technologies" />
+					<img className="icon_v1" src="/Icons/html-5.png" alt="technologies" />
 				</li>
 				<li>
-					<img src="/Icons/javascript.png" alt="technologies" />
+					<img
+						className="icon_v1"
+						src="/Icons/javascript.png"
+						alt="technologies"
+					/>
 				</li>
 				<li>
-					<img src="/Icons/ruby.png" alt="technologies" />
+					<img className="icon_v1" src="/Icons/ruby.png" alt="technologies" />
 				</li>
 				<li>
-					<img src="/Icons/react.png" alt="technologies" />
+					<img className="icon_v1" src="/Icons/react.png" alt="technologies" />
 				</li>
 				<li>
-					<img src="/Icons/github.png" alt="technologies" />
+					<img className="icon_v1" src="/Icons/github.png" alt="technologies" />
 				</li>
 				<li>
 					<img className="icon" src="/Icons/rails.png" alt="technologies" />
