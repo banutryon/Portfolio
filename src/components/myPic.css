@@ -27,6 +27,8 @@
         transparent 40%);
         float: left;
         margin-right: 5%;
+        
+        
 }
 .card:hover .cardImg{
     clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);

@@ -8,18 +8,17 @@ function Navbar() {
 	const [navbar, setNavbar] = useState(false);
 	const [logo, setLogo] = useState(false);
 
+	const hambuger = () => {
+		$(".navTrigger").one("click", function () {
+			$(".main_list").toggleClass("show_list");
+			$(this).toggleClass("active");
+			$("#mainListDiv").fadeIn();
+		});
+	};
 	const closeMobileMenu = () => {
 		setClick(!click);
 	};
 
-	const hambuger = () => {
-		$(".navTrigger").click(function () {
-			$(".main_list").toggleClass("show_list");
-			$(this).toggleClass("active");
-
-			$("#mainListDiv").fadeIn();
-		});
-	};
 	const changeBackground = () => {
 		if (window.scrollY >= 50) {
 			setNavbar(true);

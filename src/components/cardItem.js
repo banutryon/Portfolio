@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { ExternalLink } from "react-external-link";
 
 function CardItem(props) {
 	return (
@@ -18,6 +19,9 @@ function CardItem(props) {
 					</figure>
 					<div className="cardsItemInfo">
 						<h5 className="cardsItemText">{props.text}</h5>
+						<ExternalLink href="https://www.google.com">
+							See the app
+						</ExternalLink>
 					</div>
 				</Link>
 			</li>
