@@ -28,14 +28,14 @@ export default function ContactMe() {
 		<section className="formcontainer" id="contact">
 			<form className="form" onSubmit={sendEmail}>
 				<h1>Contact Me</h1>
-				<input type="hidden" name="contact_number" />
+				<input type="hidden" className="input" />
 				<label>Enter Name</label>
 				<input type="text" name="user_name" />
 				<label>Your Contact Email</label>
 				<input type="email" name="user_email" />
 				<label>Message</label>
 				<textarea className="message" name="message" />
-				<input className="button" type="submit" value="Send" />
+				<input id="button" type="submit" value="Send" />
 			</form>
 		</section>
 	);
