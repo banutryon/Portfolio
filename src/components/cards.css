@@ -1,6 +1,7 @@
 .cards {
     padding: 4rem;
     background: #fff;
+    height: 100vh;
 }
 #projects {
     background-color: aliceblue;
@@ -9,55 +10,43 @@
 .h1 {
     text-align: center;
     padding: 1em 0 2em 0;
-    font-size: 30px;
+    font-size: 22px;
+    margin-bottom: 30px;
 
 }
+/* .cardsContainer {
 
-.cardsContainer {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    /* max-width: 1120px; */
-    width: 100%;
-    margin: 20px auto;
-}
+    
+border: 2px solid red;
+
+} */
 
 .cardsItems {
-    margin-top: -60px;
-    margin-bottom: 30px;
+margin: -50px;
+
 }
 
 .cardsItem {
-    display: flex;
-    flex: 1;
     margin: 1.5rem 1rem;
-    height: 300px;
-
+    height: 500px;
+    /* width: 380px; */
 }
 
 .cardsItemLink {
-    display: flex;
-    flex-flow: column;
+    display: block;
     margin: 0 auto;
-    width: 340px;
-    box-shadow: 0 6px 20px rgba(28, 54, 103, 0.5);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    width: 290px;
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
-    background-color: #318746;
 
 }
 .cardsItemVid {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    border-radius: 10px;
     display: block;
+    margin: 0 auto;
     width: 340px;
-    height: 240px;
+    height: 290px;
     max-height: 100%;
     object-fit:cover;
     transition: all 0.2s linear;
@@ -66,16 +55,18 @@
 
 
 .cardsItemVid:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .cardsItemInfo {
-    height: 48px;
-    width: 100%;
-    display: block;
-    position: absolute;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 70px;
+    
+    padding: 5px;
     text-align: center;
-    bottom: 0;
+    background-color: #d78a2d;
+
 }
 .cards_h4 {
     
@@ -89,37 +80,43 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    .contentBlogContainer {
+    /* .contentBlogContainer {
         width: 84%;
-    }
-    .cardsItemLink {
-        width: 400px;
+    } */
+    /* .cardsItemLink {
+        width: 600px;
         height: 280px;
-    }
+    } */
     
 }
 
+
+
 @media only screen and (min-width: 1024px) {
-    .cardsItems {
+    /* .cardsItems {
         display: flex;
         flex-wrap: wrap;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .cardsItem {
-        width: 220px;
-        height: 320px;
+    } */
+    /* .cardsItem {
+        width: 320px;
+        height: 280px;
         margin: 1em;
-    }
-    .tesla_project {
-        margin-top: -10px;
-        width: 900px;
-    }
-    .tesla_vid {
+                border: 1px solid orange;
+
+    } */
+     /* .cardsItemLink {
+         width: 340px;
+         height: 280px;
+     } */
+    /* .tesla_project {
+       
         width: 600px;
         height: 280px;
-        
-
-    }
+        border: 1px solid orange;
+    } */
+    /* .tesla_vid {
+        width: 400px;
+        height: 230px;
+    } */
+    
 }
