@@ -1,3 +1,8 @@
+:root {
+    --primary: #406d59;
+    --secondary: #1137b3cd;
+    --accent: #d78b2d;
+}
 .footer {
     display: flex;
     justify-content: center;

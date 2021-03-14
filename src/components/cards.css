@@ -1,3 +1,8 @@
+:root {
+    --primary: #406d59;
+    --secondary: #1137b3cd;
+    --accent: #d78b2d;
+}
 .cards {
     padding: 4rem;
     background: #fff;
@@ -14,12 +19,7 @@
     margin-bottom: 30px;
 
 }
-/* .cardsContainer {
 
-    
-border: 2px solid red;
-
-} */
 
 .cardsItems {
 margin: -50px;
@@ -78,7 +78,29 @@ margin: -50px;
     line-height: 24px; 
     margin-bottom: 10px;
 }
+.link_div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
 
+}
+.app {
+        padding: 5px;
+        background-color: rgba(255, 255, 255, 0.954);
+        border-radius: 25%;
+        cursor: pointer;
+
+}
+.git_link {
+    width: 60px;
+    height: 60px;
+}
+.app_link {
+    width: 60px;
+    height: 60px;
+
+}
 @media only screen and (min-width: 1200px) {
     /* .contentBlogContainer {
         width: 84%;

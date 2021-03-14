@@ -4,7 +4,6 @@ import "./cards.css";
 import { ExternalLink } from "react-external-link";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import { Link } from "react-router-dom";
 function Cards() {
 	return (
 		<section className="cards" id="projects">
@@ -31,6 +30,37 @@ function Cards() {
 									<h5 className="cards_h5">
 										Built using Node.js, Mongoose, Express and EJS
 									</h5>
+								</div>
+								<div className="link_div">
+									<div className="git_link">
+										<ExternalLink>
+											<img
+												className="app"
+												src="/Icons/git.png"
+												alt="Github"
+												onClick={() =>
+													window.open(
+														"https://github.com/banutryon/Project-2",
+														"_blank"
+													)
+												}
+											/>
+										</ExternalLink>
+									</div>
+									<div className="app_link">
+										<ExternalLink>
+											<img
+												className="app"
+												src="/Icons/app.png"
+												alt="app link"
+												onClick={() =>
+													window.open(
+														"https://tryon-experiences.herokuapp.com/tryon-experiences"
+													)
+												}
+											/>
+										</ExternalLink>
+									</div>
 								</div>
 							</div>
 						</li>
