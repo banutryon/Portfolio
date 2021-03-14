@@ -57,7 +57,7 @@
     left: 0;
     display: block;
     width: 340px;
-    height: 80%;
+    height: 240px;
     max-height: 100%;
     object-fit:cover;
     transition: all 0.2s linear;
