@@ -8,7 +8,8 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 1rem auto;
-    max-width: 40%;
+    width: 140px;
+    height: 180px;
     box-shadow: 0.50rem -0.5rem 0 var(--secondary),
     0 -0.5rem 0 var(--primary),
         -0.4rem -1rem 0 var(--accent);
@@ -98,15 +99,20 @@
 }
 
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 900px) {
     
     .card {
-        max-width: 250px;
+        height: 300px;
+        width: 250px;
         right: 30vw;
         top: 180px;
     }
     .card:hover {
         clip-path: circle(100%);
+    }
+    .cardImg {
+        height: 350px;
+        width: 250px;
     }
     
 }
