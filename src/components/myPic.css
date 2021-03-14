@@ -68,7 +68,7 @@
 }
 
 .cardImg {
-    height: auto;
+    height: 250px;
     width: 150px ;
     display: block;
     grid-column: 1 / -1;
