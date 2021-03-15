@@ -8,8 +8,8 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 1rem auto;
-    width: 140px;
-    height: 180px;
+    width: 120px;
+    height: 150px;
     box-shadow: 0.50rem -0.5rem 0 var(--secondary),
     0 -0.5rem 0 var(--primary),
         -0.4rem -1rem 0 var(--accent);
@@ -20,15 +20,14 @@
         transparent),
     radial-gradient(circle at bottom right,
         transparent 5%,
-        var(--secondary) 15%,
+        var(--secondary) 5%,
         var(--secondary) 20%,
         transparent 10%,
         transparent 22%,
         var(--secondary) 20%,
         transparent 40%);
-        float: left;
-        margin-right: 5%;
-        
+        float: right;
+        margin: 8px;
         
 }
 .card:hover .cardImg{
@@ -37,13 +36,13 @@
 }
 .card::after {
     content: "";
-    grid-column: 4 / 6;
-    grid-row: 1 / 2;
+    grid-column: 5 / 6;
+    grid-row: 1 / 3;
     background: linear-gradient(to bottom left,
             var(--accent) 15%,
             transparent);
     mix-blend-mode: multiply;
-    clip-path: circle(20%);
+    clip-path: circle(10%);
     transition: clip-path 400ms ease-in-out;
    
     

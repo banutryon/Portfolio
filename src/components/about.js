@@ -5,7 +5,12 @@ function About() {
 	return (
 		<section className="container" id="about">
 			<h1 className="about">About</h1>
-			<div className="aboutContainer">
+			<img id="node" src="/Icons/Nodes.png" alt="node" />
+			<span className="rock"></span>
+			<span className="dive"></span>
+			<span className="rocket"></span>
+			<span className="laptop"></span>
+			{/* <div className="aboutContainer">
 				<div className="aboutIconMe">
 					<img src="/Icons/me.png" alt="aboutIcon" />
 
@@ -44,26 +49,27 @@ function About() {
 				<p className="popup5 popup speech-bubble speech-bubble-right">
 					Fast load times to keep the customer engaged is my highest priority.
 				</p>
-			</div>
-			<div className="text">
-				<Me />
-				<p className="p">
-					As a software engineer, I will take my previous experiences and apply
-					them to the projects at hand and provide a solution to your users that
-					will make your company proud. My passion to improve people’s lives
-					through technology will allow me to put in the work to make sure we
-					understand the customer at a high level and create world-class
-					products.
-				</p>
+			</div> */}
+			<div className="text_container">
+				<span className="text">
+					<p className="p">
+						As a software engineer, I will take my previous experiences and
+						apply them to the projects at hand and provide a solution to your
+						users that will make your company proud. My passion to improve
+						people’s lives through technology will allow me to put in the work
+						to make sure we understand the customer at a high level and create
+						world-class products.
+					</p>
+					<Me />
 
-				<br />
-				<p className="p">
-					Having over 15 years of experience in consumer electronics has
-					provided me with a solid understanding of how users interact with
-					different technologies. I feel like this gives me an upper hand as a
-					software engineer as I can look at the problem/project from many
-					different angles before even beginning to write any code.
-				</p>
+					<p className="p">
+						Having over 15 years of experience in consumer electronics has
+						provided me with a solid understanding of how users interact with
+						different technologies. I feel like this gives me an upper hand as a
+						software engineer as I can look at the problem/project from many
+						different angles before even beginning to write any code.
+					</p>
+				</span>
 			</div>
 		</section>
 	);

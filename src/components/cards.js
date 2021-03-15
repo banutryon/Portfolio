@@ -33,31 +33,22 @@ function Cards() {
 								</div>
 								<div className="link_div">
 									<div className="git_link">
-										<ExternalLink>
-											<img
-												className="app"
-												src="/Icons/git.png"
-												alt="Github"
-												onClick={() =>
-													window.open(
-														"https://github.com/banutryon/Project-2",
-														"_blank"
-													)
-												}
-											/>
+										<ExternalLink
+											className="apps_link"
+											href="https://github.com/banutryon/Project-2"
+										>
+											<img className="app" src="/Icons/git.png" alt="Github" />
 										</ExternalLink>
 									</div>
 									<div className="app_link">
-										<ExternalLink>
+										<ExternalLink
+											className="apps_link"
+											href="https://tryon-experiences.herokuapp.com/tryon-experiences"
+										>
 											<img
 												className="app"
 												src="/Icons/app.png"
 												alt="app link"
-												onClick={() =>
-													window.open(
-														"https://tryon-experiences.herokuapp.com/tryon-experiences"
-													)
-												}
 											/>
 										</ExternalLink>
 									</div>
@@ -86,6 +77,28 @@ function Cards() {
 										Built using Node.js, Mongoose, Express and React
 									</h5>
 								</div>
+								<div className="link_div">
+									<div className="git_link">
+										<ExternalLink
+											className="apps_link"
+											href="https://github.com/banutryon/8Ball"
+										>
+											<img className="app" src="/Icons/git.png" alt="Github" />
+										</ExternalLink>
+									</div>
+									<div className="app_link">
+										<ExternalLink
+											className="apps_link"
+											href="https://memeball.herokuapp.com/"
+										>
+											<img
+												className="app"
+												src="/Icons/app.png"
+												alt="app link"
+											/>
+										</ExternalLink>
+									</div>
+								</div>
 							</div>
 						</li>
 						{/* ============================================================== */}
@@ -108,6 +121,28 @@ function Cards() {
 										Built with HTML, CSS, JavaScript and jQuery
 									</h5>
 								</div>
+								<div className="link_div">
+									<div className="git_link">
+										<ExternalLink
+											className="apps_link"
+											href="https://github.com/banutryon/SuperHero-Project-1"
+										>
+											<img className="app" src="/Icons/git.png" alt="Github" />
+										</ExternalLink>
+									</div>
+									<div className="app_link">
+										<ExternalLink
+											className="apps_link"
+											href="https://banutryon.github.io/SuperHero-Project-1/"
+										>
+											<img
+												className="app"
+												src="/Icons/app.png"
+												alt="app link"
+											/>
+										</ExternalLink>
+									</div>
+								</div>
 							</div>
 						</li>
 						{/* ============================================================== */}
@@ -128,6 +163,28 @@ function Cards() {
 									<h5 className="cards_h5">
 										Built using Node.js, Mongoose, React and Redux
 									</h5>
+								</div>
+								<div className="link_div">
+									<div className="git_link">
+										<ExternalLink
+											className="apps_link"
+											href="https://github.com/banutryon/Tesla-App"
+										>
+											<img className="app" src="/Icons/git.png" alt="Github" />
+										</ExternalLink>
+									</div>
+									<div className="app_link">
+										<ExternalLink
+											className="apps_link"
+											href="https://tesla-app-front.herokuapp.com/"
+										>
+											<img
+												className="app"
+												src="/Icons/app.png"
+												alt="app link"
+											/>
+										</ExternalLink>
+									</div>
 								</div>
 							</div>
 						</li>

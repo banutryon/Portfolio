@@ -17,6 +17,8 @@ function Navbar() {
 	};
 	const closeMobileMenu = () => {
 		setClick(!click);
+		// let x = document.querySelector(".navTrigger");
+		// x.toggleClass("active");
 	};
 
 	const changeBackground = () => {
