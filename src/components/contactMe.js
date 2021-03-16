@@ -1,6 +1,7 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import "./contact.css";
+import { ExternalLink } from "react-external-link";
 
 export default function ContactMe() {
 	function sendEmail(e) {
@@ -26,17 +27,53 @@ export default function ContactMe() {
 
 	return (
 		<section className="formcontainer" id="contact">
-			<form className="form" onSubmit={sendEmail}>
-				<h1>Contact Me</h1>
-				<input type="hidden" className="input" />
-				<label>Enter Name</label>
-				<input type="text" name="user_name" />
-				<label>Your Contact Email</label>
-				<input type="email" name="user_email" />
-				<label>Message</label>
-				<textarea className="message" name="message" />
-				<input id="button" type="submit" value="Send" />
-			</form>
+			<h1 className="h1">CONTACT ME</h1>
+			<div className="contact_box">
+				<form className="form" onSubmit={sendEmail}>
+					<h1>Send Me An Email</h1>
+					<input type="hidden" className="input" />
+					<label>Enter Name</label>
+					<input type="text" name="user_name" />
+					<label>Your Email</label>
+					<input type="email" name="user_email" />
+					<label>Message</label>
+					<textarea className="message" name="message" />
+					<input id="button" type="submit" value="Send" />
+				</form>
+				<div id="contact_icons">
+					<ExternalLink
+						className="link_contact"
+						href="linkedin.com/in/tryon-experiences"
+					>
+						<img
+							className="icon_contact"
+							src="/Icons/link.png"
+							alt="technologies"
+						/>
+					</ExternalLink>
+					<ExternalLink
+						className="link_contact"
+						href="https://www.facebook.com/banu.tryon/"
+					>
+						<img
+							className="icon_contact"
+							src="/Icons/face.png"
+							alt="technologies"
+						/>
+					</ExternalLink>
+
+					<ExternalLink
+						className="link_contact"
+						href="https://github.com/banutryon?tab=repositories"
+					>
+						<img
+							className="icon_contact"
+							src="/Icons/repo.png"
+							alt="technologies"
+						/>
+					</ExternalLink>
+				</div>
+			</div>
 		</section>
 	);
 }

@@ -22,7 +22,7 @@ function App() {
 			<Tech />
 			<Cards />
 			<ContactMe />
-			<Footer />
+			{/* <Footer /> */}
 			{/* </Route>
 					<Route exact path="/tesla">
 						<ProjectTesla />
