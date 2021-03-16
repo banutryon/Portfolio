@@ -27,23 +27,23 @@ export default function ContactMe() {
 
 	return (
 		<section className="formcontainer" id="contact">
-			<h1 className="h1">CONTACT ME</h1>
+			{/* <h1 className="h1">CONTACT ME</h1> */}
 			<div className="contact_box">
 				<form className="form" onSubmit={sendEmail}>
 					<h1>Send Me An Email</h1>
 					<input type="hidden" className="input" />
-					<label>Enter Name</label>
+					<label id="label">Enter Name</label>
 					<input type="text" name="user_name" />
-					<label>Your Email</label>
+					<label id="label">Your Email</label>
 					<input type="email" name="user_email" />
-					<label>Message</label>
+					<label id="label">Message</label>
 					<textarea className="message" name="message" />
 					<input id="button" type="submit" value="Send" />
 				</form>
 				<div id="contact_icons">
 					<ExternalLink
 						className="link_contact"
-						href="linkedin.com/in/tryon-experiences"
+						href="https://www.linkedin.com/in/tryon-experiences"
 					>
 						<img
 							className="icon_contact"

@@ -10,10 +10,12 @@ function HeroSection() {
 				<img className="sky" src="images-videos/sky.jpg" alt="background" />
 
 				<div className="intro">
-					<h1>Banu Tryon </h1>
+					<h2>
+						Hello I'm<h1>Banu Tryon </h1>
+					</h2>
 					<p>
-						I'm a full-stack web developer focused on creating world class
-						experiences through clean and user-friendly design.
+						Full-stack web developer focused on creating world class experiences
+						through clean and user-friendly design.
 					</p>
 				</div>
 				<div className="heroLink">

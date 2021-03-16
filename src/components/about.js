@@ -77,16 +77,16 @@ function About() {
 			<div className="text_container">
 				<span className="text">
 					<Me />
-					<p className="p">
+					<p className="p" id="p">
 						As a software engineer, I will take my previous experiences and
 						apply them to the projects at hand and provide a solution to your
-						users that will make your company proud. AMy passion to improve
+						users that will make your company proud. My passion to improve
 						people’s lives through technology will allow me to put in the work
 						to make sure we understand the customer at a high level and create
 						world-class products.
 					</p>
 
-					<p className="p">
+					<p className="p" id="p">
 						Having over 15 years of experience in consumer electronics has
 						provided me with a solid understanding of how users interact with
 						different technologies. I feel like this gives me an upper hand as a

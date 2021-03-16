@@ -7,7 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 function Cards() {
 	return (
 		<section className="cards" id="projects">
-			<h1 className="h1">Check out some of my projects!</h1>
+			<h1 className="h_1">Check out some of my projects!</h1>
 
 			<div className="cardsContainer">
 				{/* <div className="cardsrapper"> */}

@@ -28,16 +28,20 @@
      /* margin-top: 30vh; */
 
 }
-.intro > h1 {
-    margin: -50px 0 30px 0;
+.intro>h2 {
+    font-size: 26px;
+    margin-top: -120px;
     color: white;
+}
+.intro>h2>h1 {
+    color: #2b9437;
     font-size: 30px;
-    padding: 100px auto;
+    margin: 15px auto;
 }
 .intro > p {
     color: white;
     font-size: 12px;
-    margin: 0 15px;
+    margin: 30px 15px;
 }
 .intro {
     text-align: center;
@@ -59,7 +63,7 @@
 
 .heroLink:hover {
     font-size: 22px;
-    color: black;
+    color: #45484a;
     border: 1px solid white;
     background-color: white;
 }
@@ -67,16 +71,26 @@
 
 
   @media screen and (min-width: 1024px) {
-    .intro > h1 {
+    .intro>h2
+     {
         /* background: url('images-videos/headerVideo.mp4') center center/center no-repeat; */
-        font-size: 20px;
+        font-size: 30px;
         margin-top: 20px;
-
+        color: white;
+    }
+    .intro>h2>h1 {
+    color: #2b9437;
     }
     .intro {
         text-align: center;
         display: block;
         margin: 50px auto 15px auto;
 
+    }
+    .intro>p {
+        color: white;
+        font-size: 16px;
+        margin: 15px 15px;
+        width: 500px;
     }
   }

@@ -3,20 +3,19 @@
     --secondary: #1137b3cd;
     --accent: #d78b2d;
 }
-.cards {
+#projects {
     padding: 4rem;
-    background: #fff;
+    background: aliceblue;
     height: 100vh;
 }
-#projects {
-    background-color: aliceblue;
-}
 
-.h1 {
+
+.h_1 {
     text-align: center;
     padding: 1em 0 2em 0;
-    font-size: 22px;
-    margin-bottom: 30px;
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: #45484a;
 
 }
 
@@ -28,7 +27,7 @@ margin: -50px;
 
 .cardsItem {
     margin: 1.5rem 1rem;
-    height: 500px;
+    height: 450px;
     /* width: 380px; */
 }
 
@@ -36,7 +35,6 @@ margin: -50px;
     display: block;
     margin: 0 auto;
     width: 290px;
-    border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
 
@@ -46,7 +44,7 @@ margin: -50px;
     display: block;
     margin: 0 auto;
     width: 340px;
-    height: 290px;
+    height: 250px;
     max-height: 100%;
     object-fit:cover;
     transition: all 0.2s linear;
@@ -124,7 +122,8 @@ margin: -50px;
     padding: 1em 0 2em 0;
     font-size: 30px;
     margin-bottom: 30px;
-    color: #021d77cd;
+    color: #45484a;
+
 }
 
 
@@ -132,11 +131,11 @@ margin: -50px;
     margin: -50px 10px 10px 10px;
 }
 
-/* .cardsItem {
+.cardsItem {
     margin: 1.5rem 1rem;
-    height: 600px;
+    height: 500px;
     width: 380px;
-} */
+}
 .car {
     display: block;
     margin: 0 auto;
