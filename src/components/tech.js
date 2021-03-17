@@ -72,6 +72,7 @@ function Tech() {
 				/>
 
 				<Modal
+					id="modal_tech"
 					className="modal"
 					isOpen={modalIsOpen}
 					onRequestClose={closeModal}

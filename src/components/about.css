@@ -12,11 +12,11 @@
 #about {
     background-color:var(--background)
 }
-.container h1 {
+/* .container h1 {
     
     padding: 4em 0 2em 0;
     text-align: center;
-}
+} */
 #node {
     margin: -60px 0 0 10px;
     height: 320px;
@@ -27,7 +27,7 @@
     display: block;
     width: 90%;
     height: 300px;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 .p {
@@ -162,27 +162,42 @@
 
 
 @media only screen and (min-width: 900px) {
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+   
+}
 
-.container h1 {
-    font-size: 36px;
+.text_container h1 {
+    font-size: 30px;
+}
+.about {
+    margin: 40px 0 50px 50px;
+}
+.right_about {
+    background-color: #86c0ed;
+    display: block;
+    width: 60vw;
+
 }
 #node {
-    margin: 10px 0 0 150px;
-    height: 400px;
-    width: 190px;
+    margin: 100px 50px 0 50px;
+    height: 200px;
+    width: 500px;
+    border: 1px solid blue;
 }
 
 .text_container {
     display: block;
-    width: 50%;
-    height: 500px;
-    margin: -400px 0 10px 40%;
+    width: 40vw;
+    height: auto;
+    /* margin: 0px 50px 10px 50px; */
 }
 
 .p {
-    width: 460px;
-    font-size: 20px;
-    margin: 15px;
+    width: 400px;
+    font-size: 16px;
+    margin: 10px 0 0 50px;
     word-spacing: 2px;
     line-height: 22px;
     font-weight: 300;

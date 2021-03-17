@@ -4,77 +4,42 @@ import Me from "./myPic";
 function About() {
 	return (
 		<section className="container" id="about">
-			<h1 className="about">About</h1>
-			<img id="node" src="/Icons/Nodes.png" alt="node" />
+			<div className="right_about">
+				<img id="node" src="/Icons/Nodes_horizontal.png" alt="node" />
 
-			<span className="rock"></span>
-			<div id="popup1">
-				<p className="p_about">
-					Assessing a problem before deciding on a solution. Select methods that
-					are the most efficient while maintaining the highest quality. "Pareto
-					Principle"
-				</p>
+				<span className="rock"></span>
+				<div id="popup1">
+					<p className="p_about">
+						Assessing a problem before deciding on a solution. Select methods
+						that are the most efficient while maintaining the highest quality.
+						"Pareto Principle"
+					</p>
+				</div>
+				<span className="dive "></span>
+				<div id="popup2">
+					<p className="p_about">
+						Dive deep - consider all angles of a problem or need
+					</p>
+				</div>
+				<span className="rocket"></span>
+				<div id="popup3">
+					<p className="p_about">
+						Fast load times to keep the customer engaged is my highest priority.
+					</p>
+				</div>
+				<span className="laptop"></span>
+				<div id="popup4">
+					<p className="p_about">
+						My layouts will work on any device, big or small.
+					</p>
+				</div>
+				<a className="resume" href="/resume.pdf" target="_newtab" download>
+					Resume
+				</a>
 			</div>
-			<span className="dive "></span>
-			<div id="popup2">
-				<p className="p_about">
-					Dive deep - consider all angles of a problem or need
-				</p>
-			</div>
-			<span className="rocket"></span>
-			<div id="popup3">
-				<p className="p_about">
-					Fast load times to keep the customer engaged is my highest priority.
-				</p>
-			</div>
-			<span className="laptop"></span>
-			<div id="popup4">
-				<p className="p_about">
-					My layouts will work on any device, big or small.
-				</p>
-			</div>
-
-			{/* <div className="aboutContainer">
-				<div className="aboutIconMe">
-					<img src="/Icons/me.png" alt="aboutIcon" />
-
-					<div className="line1"></div>
-				</div>
-
-				<p className="popup1 popup speech-bubble speech-bubble-left">
-					I am willing to put in the work!!
-				</p>
-				<div className="aboutIcon1">
-					<img src="/Icons/diving.png" alt="aboutIcon" />
-					<div className="line2"></div>
-				</div>
-				<p className="popup2 popup speech-bubble speech-bubble-left">
-					Dive deep - consider all angles of a problem or need
-				</p>
-				<div className="aboutIcon2">
-					<img src="/Icons/scale.png" alt="aboutIcon" />
-					<div className="line3"></div>
-				</div>
-				<p className="popup3 popup speech-bubble speech-bubble-left">
-					Assessing a problem before deciding on a solution. Select methods that
-					are the most efficient while maintaining the highest quality. [Pareto
-					Principle]
-				</p>
-				<div className="aboutIcon3">
-					<img src="/Icons/laptop.png" alt="aboutIcon" />
-					<div className="line4"></div>
-				</div>
-				<p className="popup4 popup speech-bubble speech-bubble-right">
-					My layouts will work on any device, big or small.
-				</p>
-				<div className="aboutIcon4">
-					<img src="/Icons/speed.png" alt="aboutIcon" />
-				</div>
-				<p className="popup5 popup speech-bubble speech-bubble-right">
-					Fast load times to keep the customer engaged is my highest priority.
-				</p>
-			</div> */}
 			<div className="text_container">
+				<h1 className="about">ABOUT ME</h1>
+
 				<span className="text">
 					<Me />
 					<p className="p" id="p">

@@ -15,6 +15,13 @@ function Navbar() {
 			$("#mainListDiv").fadeIn();
 		});
 	};
+	const hambuger2 = () => {
+		$(".li").one("click", function () {
+			$(".navTrigger").toggleClass("active");
+			$(".main_list").toggleClass("show_list");
+			$("#mainListDiv").fadeIn();
+		});
+	};
 	const closeMobileMenu = () => {
 		setClick(!click);
 		// let x = document.querySelector(".navTrigger");
@@ -72,7 +79,8 @@ function Navbar() {
 									smooth={true}
 									duration={1000}
 									className="li"
-									onClick={closeMobileMenu}
+									// onClick={closeMobileMenu}
+									onClick={hambuger2}
 								>
 									ABOUT
 								</Link>
@@ -84,7 +92,8 @@ function Navbar() {
 									smooth={true}
 									duration={1000}
 									className="li"
-									onClick={closeMobileMenu}
+									// onClick={closeMobileMenu}
+									onClick={hambuger2}
 								>
 									TECHNOLOGIES
 								</Link>
@@ -95,7 +104,8 @@ function Navbar() {
 									smooth={true}
 									duration={1000}
 									className="li"
-									onClick={closeMobileMenu}
+									// onClick={closeMobileMenu}
+									onClick={hambuger2}
 								>
 									PROJECTS
 								</Link>
@@ -106,7 +116,8 @@ function Navbar() {
 									smooth={true}
 									duration={1000}
 									className="li"
-									onClick={closeMobileMenu}
+									// onClick={closeMobileMenu}
+									onClick={hambuger2}
 								>
 									CONTACT ME
 								</Link>
