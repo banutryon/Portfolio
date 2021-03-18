@@ -8,8 +8,8 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 1rem auto;
-    width: 100px;
-    height: 120px;
+    width: 120px;
+    height: 140px;
     box-shadow: 0.50rem -0.5rem 0 var(--secondary),
     0 -0.5rem 0 var(--primary),
         -0.4rem -1rem 0 var(--accent);
@@ -26,8 +26,8 @@
         transparent 22%,
         var(--secondary) 20%,
         transparent 40%);
-        /* float: right; */
-        margin: 50px 0 0 50px;
+        float: left;
+        margin: 20px 15px 0 7px;
         
 }
 .card:hover .cardImg{
