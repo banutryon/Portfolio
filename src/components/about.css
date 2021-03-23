@@ -66,12 +66,15 @@
     width: 350px;
 }
 .p_about {
-    padding: 10px;
-    width: 200px;
+    position: relative;
+
+    /* width: 200px; */
     font-size: 10px;
-    margin: 5px;
+    margin: 10px;
     color: #45484a;
-    transform: rotate(180deg)
+    transform: rotate(180deg);
+    left: -20px;
+    top: -5px;
 }
 /* ===========Popups=============== */
 .popup_flex {
@@ -88,7 +91,8 @@
     position: relative;
     /* overflow: hidden; */
     display: none;
-    
+    /* width: 420px;
+    height: 160px; */
 
 
 }
@@ -101,8 +105,8 @@
     display: block;
     animation: hover_move 1s ease;
     transform: rotate(180deg);
-    width: 200px;
-    height: 70px;
+    width: 400px;
+    height: 125px;
 }
 
 .rock,
@@ -172,8 +176,7 @@
     width: 54px;
     height: 54px;
     display: block;
-    margin-top: -190px;
-    margin-right: 40px;
+    margin-top: 40px;
     float: right;
     font-size: 6px;
     text-align: center;
