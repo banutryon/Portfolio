@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./about.css";
 import Me from "./myPic";
 function About() {
+	const [icon, setIcon] = useState(false);
+
 	return (
 		<section className="container" id="about">
 			<div className="right_about">
 				<div id="responsive">
 					<img id="node" src="/Icons/Nodes_horizontal.png" alt="node" />
 					<div className="popup_flex">
-						<span className="rock"></span>
+						<span className="rock rockIcon"></span>
+						{/* <img
+							className={icon ? "rock" : "rock rockIcon"}
+							src="/public/Icons/Balance_highlighted.png"
+							alt="rock"
+						/> */}
 						<div id="popup1">
 							<p className="p_about">
 								Assessing a problem before deciding on a solution. Select
