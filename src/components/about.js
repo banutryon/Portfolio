@@ -44,10 +44,6 @@ function About() {
 						</div>
 					</div>
 				</div>
-				<a id="resume" href="/resume.pdf" target="_newtab" download>
-					<img src="/Icons/file.png" alt="resume" target="_newtab" download />
-					Click to download Resume
-				</a>
 			</div>
 			<div className="left_about">
 				<h1 className="about">ABOUT ME</h1>
@@ -71,6 +67,10 @@ function About() {
 						different angles before even beginning to write any code.
 					</p>
 				</span>
+				<a id="resume" href="/resume.pdf" target="_newtab" download>
+					<img src="/Icons/file.png" alt="resume" target="_newtab" download />
+					Click to download Resume
+				</a>
 			</div>
 		</section>
 	);
