@@ -1,5 +1,5 @@
 import React from "react";
-import "./tech.css";
+import "../scss/tech.scss";
 import Modal from "react-modal";
 import { Link } from "react-scroll";
 

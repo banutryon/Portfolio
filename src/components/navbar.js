@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import "./navbar.css";
+import "../scss/navbar.scss";
 import { animateScroll as scroll } from "react-scroll";
 import $ from "jquery";
 function Navbar() {

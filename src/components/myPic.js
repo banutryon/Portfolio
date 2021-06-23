@@ -1,5 +1,5 @@
 import React from "react";
-import "./myPic.css";
+import "../scss/mypic.scss";
 
 function Me() {
 	return (

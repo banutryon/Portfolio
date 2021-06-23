@@ -1,0 +1,75 @@
+@import 'config';
+
+
+.about {
+    padding: 6rem 0 2rem 0;
+    background-color: white;
+    height: 100vh;
+
+
+    &__bio {
+        width: 90%;
+        text-align: center;
+
+        // background: rgba(0, 0, 0, 0.517);
+        // margin-bottom: .3rem;
+        // padding: .3rem;
+        .text-secondary {
+            padding-bottom: 1rem;
+        }
+    }
+
+    .jobs {
+        width: 65vw;
+        margin: 1rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+
+        &__job {
+            background: lighten($primary-color, 10%);
+            padding: .5rem;
+            border-bottom: 5px solid $secondary-color;
+
+            h2,
+            h3 {
+                margin: .5rem 0;
+            }
+
+            h6 {
+                margin: .3rem 0;
+            }
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+
+        .resume img {
+            height: 1.8rem;
+            width: 2rem;
+        }
+
+        .resume p {
+            font-size: 10px;
+        }
+    }
+
+
+}
+
+
+// @media (min-width: $breakpoint-tablet) {
+//     .about {
+
+//         &__bio-image {
+//         background: linear-gradient(to right,
+//                 rgba($primary-color, .7),
+//                 rgba($primary-color, .1)),
+//             url('../img/6.jpg') center bottom;
+//         background-size: 100% 180%;
+//         background-repeat: no-repeat;
+//         }
+//     }
+// }

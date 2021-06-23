@@ -1,0 +1,115 @@
+@import 'config';
+@import 'home';
+// @import 'menu';
+@import 'about';
+// @import 'projects';
+// @import 'contact';
+// @import 'responsive';
+
+
+// APP sytling
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#root {
+    position: relative;
+    z-index: -3;
+}
+
+body {
+    position: relative;
+    z-index: -3;
+}
+
+#about,
+#tech,
+#contact {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#hero {
+    height: 65vh;
+}
+
+#about {
+    background-color: white;
+}
+
+#tech {
+    background-color: ghostwhite;
+}
+
+#projects {
+    background-color: rgba(205, 205, 205, 0.988);
+    /* height: 0vh; */
+}
+
+// ====================
+
+// body {
+//     background: $primary-color;
+//     color: set-text-color($primary-color);
+//     height: 100vh;
+//     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+//     line-height: 1;
+
+// }
+
+// h1,
+// h2,
+// h3 {
+//     font-weight: 400;
+
+// }
+
+// .text-secondary {
+//     color: $secondary-color;
+// }
+
+// a {
+//     color: set-text-color($primary-color);
+//     text-decoration: none;
+// }
+
+// header {
+//     position: fixed;
+//     z-index: 2;
+//     width: 100%;
+//     padding: 1rem;
+// }
+
+// main {
+//     height: 100%;
+//     width: 100%;
+// }
+
+// .social-icons {
+//     position: fixed;
+//     bottom: 1rem;
+//     left: 1rem;
+// }
+
+// a {
+//     padding: .4rem;
+//     @include transition-ease;
+
+//     &:hover {
+//         color: $secondary-color;
+//     }
+// }
+
+// footer {
+//     font-size: 1rem;
+//     position: fixed;
+//     bottom: .4rem;
+//     right: 1rem;
+//     text-align: right;
+//     padding: 1rem;
+//     color: set-text-color($primary-color);
+// }

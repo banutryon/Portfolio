@@ -1,0 +1,61 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  height: 100vh;
+  padding-top: 40vh;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(36, 39, 39, 0.9)), to(rgba(36, 39, 39, 0.3))), url("../imagesAbout/1.jpg") center top;
+  background: linear-gradient(to right, rgba(36, 39, 39, 0.9), rgba(36, 39, 39, 0.3)), url("../imagesAbout/1.jpg") center top;
+  background-size: cover;
+}
+
+.home__text {
+  margin-top: -5.5rem;
+}
+
+.home__line {
+  border-bottom: 2px solid #fff;
+  margin: -1rem auto 1rem auto;
+  width: 25%;
+}
+
+.home__link {
+  margin: 1rem auto;
+  font-size: 1.25rem;
+  color: white;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid white;
+  padding: 0.625rem;
+  background-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 15rem;
+}
+
+.home__link:hover {
+  font-size: 1.29rem;
+  color: #45484a;
+  border: 0.0625rem solid white;
+  background-color: white;
+}
+
+.home__name {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.home__name--last {
+  color: #1d963f;
+  font-weight: 700;
+}
+/*# sourceMappingURL=home.css.map */

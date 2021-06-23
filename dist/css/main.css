@@ -1,0 +1,256 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  height: 100hv;
+  padding-top: 40vh;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(36, 39, 39, 0.9)), to(rgba(36, 39, 39, 0.3))), url("../imagesAbout/1.jpg") center top;
+  background: linear-gradient(to right, rgba(36, 39, 39, 0.9), rgba(36, 39, 39, 0.3)), url("../imagesAbout/1.jpg") center top;
+  background-size: cover;
+}
+
+.home__text {
+  margin-top: -5.5rem;
+}
+
+.home__line {
+  border-bottom: 2px solid #fff;
+  margin: -1rem auto 1rem auto;
+  width: 25%;
+}
+
+.home__name {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.home__name--last {
+  color: #1d963f;
+  font-weight: 700;
+}
+
+.me {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}
+
+.heroContainer {
+  /* background: url('images-videos/headerVideo.mp4') center center/center no-repeat; */
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: rgba(0, 0, 0, 0.542);
+  position: relative;
+  /* top: -400px; */
+  /* margin-top: 30vh; */
+}
+
+.intro > h2 {
+  font-size: 1.625rem;
+  margin-top: -7.5rem;
+  color: white;
+}
+
+.intro > h2 > h1 {
+  color: #2b9437;
+  font-size: 1.875rem;
+  margin: 0.9375rem auto;
+}
+
+.intro > p {
+  color: white;
+  font-size: 0.75rem;
+  margin: 1.875rem 0.9375rem;
+}
+
+.intro {
+  text-align: center;
+  display: block;
+  margin: 2.5rem auto 0.625rem auto;
+}
+
+.heroLink {
+  margin-top: 1.875rem;
+  font-size: 1.25rem;
+  color: white;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid white;
+  padding: 0.625rem;
+  background-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.heroLink:hover {
+  font-size: 1.375rem;
+  color: #45484a;
+  border: 0.0625rem solid white;
+  background-color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .intro > h2 {
+    /* background: url('images-videos/headerVideo.mp4') center center/center no-repeat; */
+    font-size: 30px;
+    margin-top: 20px;
+    color: white;
+  }
+  .intro > h2 > h1 {
+    color: #2b9437;
+  }
+  .intro {
+    text-align: center;
+    display: block;
+    margin: 50px auto 15px auto;
+  }
+  .intro > p {
+    color: white;
+    font-size: 16px;
+    margin: 15px 15px;
+    width: 500px;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  padding-bottom: 2rem;
+  background-color: white;
+}
+
+.about__bio {
+  width: 80%;
+  text-align: center;
+}
+
+.about__bio .text-secondary {
+  padding-bottom: 1rem;
+}
+
+.about .jobs {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.about .jobs__job {
+  background: #3c4242;
+  padding: .5rem;
+  border-bottom: 5px solid #1d963f;
+}
+
+.about .jobs__job h2,
+.about .jobs__job h3 {
+  margin: .5rem 0;
+}
+
+.about .jobs__job h6 {
+  margin: .3rem 0;
+}
+
+.about .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .social-icons .resume img {
+  height: 1.8rem;
+  width: 2rem;
+}
+
+.about .social-icons .resume p {
+  font-size: 10px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#root {
+  position: relative;
+  z-index: -3;
+}
+
+body {
+  position: relative;
+  z-index: -3;
+}
+
+#about,
+#tech,
+#contact {
+  height: 100vh;
+  width: 100vw;
+}
+
+#hero {
+  height: 65vh;
+}
+
+#about {
+  background-color: white;
+}
+
+#tech {
+  background-color: ghostwhite;
+}
+
+#projects {
+  background-color: rgba(205, 205, 205, 0.988);
+  /* height: 0vh; */
+}
+/*# sourceMappingURL=main.css.map */

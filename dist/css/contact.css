@@ -1,0 +1,203 @@
+/* Contact.js */
+:root {
+  --primary: #406d59;
+  --secondary: #1137b3cd;
+  --accent: #d78b2d;
+}
+
+#contact {
+  background-color: rgba(0, 0, 0, 0.673);
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.h1 {
+  color: white;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.form {
+  height: 55vh;
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 90px auto 0 auto;
+  border-radius: 10px;
+  /* background-color:#1137b3ad; */
+  background-color: #86c0ed;
+}
+
+.form > h1 {
+  margin-top: 5px;
+  padding: 10px;
+  text-align: center;
+  color: #45484a;
+  font-size: 24px;
+}
+
+.form > input {
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  background: white;
+  font-size: 16px;
+  font-weight: 700;
+  color: #45484a;
+  outline: none;
+  width: 60vw;
+  max-width: 800px;
+  display: block;
+  margin: 5px auto;
+}
+
+.input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.message {
+  width: 60vw;
+  padding: 30px;
+  max-width: 800px;
+  min-height: 100px;
+  display: block;
+  border-radius: 3px;
+  margin: 5px auto;
+  border: none;
+}
+
+.form > #label {
+  padding-bottom: 10px;
+  color: #45484a;
+  font-weight: bold;
+  text-align: center;
+}
+
+#button {
+  border: none;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 5px 0 #b17225;
+          box-shadow: 0 5px 0 #b17225;
+  background-color: #d78b2d;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  margin-top: 10px;
+  width: 20vw;
+  outline: 0;
+  padding: 12px 20px;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
+#button:hover {
+  background-color: #318746;
+  -webkit-box-shadow: 0 5px 0 #266836;
+          box-shadow: 0 5px 0 #266836;
+  color: white;
+}
+
+#button:active {
+  -webkit-box-shadow: 0 2px 0 #006599;
+          box-shadow: 0 2px 0 #006599;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+#contact_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px;
+}
+
+.icon_contact {
+  height: 64px;
+  width: 64px;
+  margin: 22px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* ===================================== */
+/* ===================================== */
+/* ===================================== */
+@media only screen and (min-width: 1024px) {
+  .contact_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80vw;
+    height: 60vh;
+    margin: 150px auto 0 auto;
+  }
+  .form {
+    height: 60vh;
+    width: 40vw;
+    margin: 0 auto;
+  }
+  .form > h1 {
+    font-size: 26px;
+  }
+  .form > input {
+    width: 40vw;
+    max-width: 500px;
+  }
+  .message {
+    width: 33vw;
+    padding: 35px;
+  }
+  #button {
+    border-radius: 5px;
+    width: 10vw;
+  }
+  #contact_icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30vw;
+  }
+  .icon_contact {
+    height: 84px;
+    width: 84px;
+    margin: 40px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 5px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

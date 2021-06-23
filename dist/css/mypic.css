@@ -1,0 +1,153 @@
+:root {
+  --primary: #406d59;
+  --secondary: #1137b3cd;
+  --accent: #d78b2d;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 1fr 1rem auto;
+      grid-template-rows: 1fr 1rem auto;
+  width: 120px;
+  height: 140px;
+  -webkit-box-shadow: 0.5rem -0.5rem 0 var(--secondary), 0 -0.5rem 0 var(--primary), -0.4rem -1rem 0 var(--accent);
+          box-shadow: 0.5rem -0.5rem 0 var(--secondary), 0 -0.5rem 0 var(--primary), -0.4rem -1rem 0 var(--accent);
+  -webkit-clip-path: circle(25%);
+          clip-path: circle(25%);
+  -webkit-animation: circle-grow 2000ms 450ms forwards;
+          animation: circle-grow 2000ms 450ms forwards;
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(15%, var(--primary)), to(transparent)), radial-gradient(circle at bottom right, transparent 5%, var(--secondary) 5%, var(--secondary) 20%, transparent 10%, transparent 22%, var(--secondary) 20%, transparent 40%);
+  background-image: linear-gradient(to top right, var(--primary) 15%, transparent), radial-gradient(circle at bottom right, transparent 5%, var(--secondary) 5%, var(--secondary) 20%, transparent 10%, transparent 22%, var(--secondary) 20%, transparent 40%);
+  float: left;
+  margin: 20px 15px 0 7px;
+}
+
+.card:hover .cardImg {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.card::after {
+  content: "";
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5 / 6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(15%, var(--accent)), to(transparent));
+  background: linear-gradient(to bottom left, var(--accent) 15%, transparent);
+  mix-blend-mode: multiply;
+  -webkit-clip-path: circle(10%);
+          clip-path: circle(10%);
+  -webkit-transition: -webkit-clip-path 400ms ease-in-out;
+  transition: -webkit-clip-path 400ms ease-in-out;
+  transition: clip-path 400ms ease-in-out;
+  transition: clip-path 400ms ease-in-out, -webkit-clip-path 400ms ease-in-out;
+}
+
+.card:hover::after {
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+}
+
+.cardTitle {
+  margin: 0 0 20px 0;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / span 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0.25em;
+  position: relative;
+  z-index: 1;
+  font-size: 3vmin;
+  text-align: center;
+  text-transform: uppercase;
+  color: ghostwhite;
+  -webkit-clip-path: inset(50% 50%);
+          clip-path: inset(50% 50%);
+  -webkit-animation: heading-in 400ms 1000ms forwards;
+          animation: heading-in 400ms 1000ms forwards;
+}
+
+.cardImg {
+  height: 250px;
+  width: 150px;
+  display: block;
+  grid-column: 1 / -1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-clip-path: polygon(20% 8%, 50% 2%, 80% 50%, 54% 90%, 15% 65%);
+          clip-path: polygon(20% 8%, 50% 2%, 80% 50%, 54% 90%, 15% 65%);
+  -webkit-transition: -webkit-clip-path 400ms ease-in-out;
+  transition: -webkit-clip-path 400ms ease-in-out;
+  transition: clip-path 400ms ease-in-out;
+  transition: clip-path 400ms ease-in-out, -webkit-clip-path 400ms ease-in-out;
+  mix-blend-mode: multiply;
+  -webkit-filter: grayscale(0.5) contrast(1.5) brightness(1);
+          filter: grayscale(0.5) contrast(1.5) brightness(1);
+}
+
+@-webkit-keyframes circle-grow {
+  to {
+    -webkit-clip-path: circle(100%);
+            clip-path: circle(100%);
+  }
+}
+
+@keyframes circle-grow {
+  to {
+    -webkit-clip-path: circle(100%);
+            clip-path: circle(100%);
+  }
+}
+
+@-webkit-keyframes heading-in {
+  to {
+    -webkit-clip-path: inset(10%);
+            clip-path: inset(10%);
+  }
+}
+
+@keyframes heading-in {
+  to {
+    -webkit-clip-path: inset(10%);
+            clip-path: inset(10%);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    height: 350px;
+    width: 300px;
+    right: 30vw;
+    top: 180px;
+    margin: 20px 20px 10px 0;
+  }
+  .card:hover {
+    -webkit-clip-path: circle(100%);
+            clip-path: circle(100%);
+  }
+  .cardImg {
+    height: 350px;
+    width: 250px;
+  }
+  .cardTitle {
+    font-size: 2vmin;
+  }
+}
+/*# sourceMappingURL=mypic.css.map */

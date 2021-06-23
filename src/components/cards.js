@@ -1,5 +1,5 @@
 import React from "react";
-import "./cards.css";
+import "../scss/cards.scss";
 // import CardItem from "./cardItem";
 import { ExternalLink } from "react-external-link";
 import { Carousel } from "react-responsive-carousel";

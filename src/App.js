@@ -1,5 +1,7 @@
 import React from "react";
-import "./App.css";
+// import "./App.css";
+import "./scss/main.scss";
+
 import Navbar from "./components/navbar";
 import About from "./components/about";
 import HeroSection from "./components/heroSection";
@@ -13,22 +15,22 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
 	return (
 		<>
-			{/* <Router>
+			<Router>
 				<Switch>
-					<Route exact path="/"> */}
+					<Route exact path="/">
 			<Navbar />
 			<HeroSection />
 			<About />
 			<Tech />
 			<Cards />
 			<ContactMe />
-			{/* <Footer /> */}
-			{/* </Route>
+			<Footer />
+			</Route>
 					<Route exact path="/tesla">
 						<ProjectTesla />
 					</Route>
 				</Switch>
-			</Router> */}
+			</Router>
 		</>
 	);
 }

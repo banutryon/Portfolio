@@ -1,0 +1,66 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  padding: 6rem 0 2rem 0;
+  background-color: white;
+  height: 100vh;
+}
+
+.about__bio {
+  width: 90%;
+  text-align: center;
+}
+
+.about__bio .text-secondary {
+  padding-bottom: 1rem;
+}
+
+.about .jobs {
+  width: 65vw;
+  margin: 1rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+.about .jobs__job {
+  background: #494949;
+  padding: .5rem;
+  border-bottom: 5px solid #89d2ff;
+}
+
+.about .jobs__job h2,
+.about .jobs__job h3 {
+  margin: .5rem 0;
+}
+
+.about .jobs__job h6 {
+  margin: .3rem 0;
+}
+
+.about .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .social-icons .resume img {
+  height: 1.8rem;
+  width: 2rem;
+}
+
+.about .social-icons .resume p {
+  font-size: 10px;
+}
+/*# sourceMappingURL=about.css.map */

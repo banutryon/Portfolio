@@ -1,6 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import "./contact.css";
+import "../scss/contact.scss";
 import { ExternalLink } from "react-external-link";
 
 export default function ContactMe() {

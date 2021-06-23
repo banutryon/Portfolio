@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import "./footer.css";
+import "../scss/footer.scss";
 function Footer() {
 	return (
 		<>
