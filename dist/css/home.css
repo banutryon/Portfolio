@@ -5,6 +5,32 @@
   padding: 0;
 }
 
+@-webkit-keyframes transistionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-10deg);
+            transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+@keyframes transistionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-10deg);
+            transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
 .home {
   height: 100vh;
   padding-top: 40vh;
@@ -13,13 +39,16 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(36, 39, 39, 0.9)), to(rgba(36, 39, 39, 0.3))), url("../imagesAbout/1.jpg") center top;
-  background: linear-gradient(to right, rgba(36, 39, 39, 0.9), rgba(36, 39, 39, 0.3)), url("../imagesAbout/1.jpg") center top;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 47, 47, 0.7)), to(rgba(47, 47, 47, 0.3))), url("../imagesAbout/2.jpg") left top;
+  background: linear-gradient(to bottom, rgba(47, 47, 47, 0.7), rgba(47, 47, 47, 0.3)), url("../imagesAbout/2.jpg") left top;
   background-size: cover;
 }
 
 .home__text {
   margin-top: -5.5rem;
+  -webkit-animation: transistionIn 2s;
+          animation: transistionIn 2s;
+  color: #e6e6e6;
 }
 
 .home__line {
@@ -55,7 +84,22 @@
 }
 
 .home__name--last {
-  color: #1d963f;
+  color: #0cbec8;
   font-weight: 700;
+}
+
+@media only screen and (min-width: 1024px) {
+  .home {
+    height: 100vh;
+    padding-top: 40vh;
+    overflow: hidden;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(47, 47, 47, 0.9)), to(rgba(47, 47, 47, 0.3))), url("../imagesAbout/1.jpg") right top;
+    background: linear-gradient(to right, rgba(47, 47, 47, 0.9), rgba(47, 47, 47, 0.3)), url("../imagesAbout/1.jpg") right top;
+    background-size: cover;
+  }
 }
 /*# sourceMappingURL=home.css.map */

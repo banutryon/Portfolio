@@ -4,9 +4,9 @@ import "../scss/mypic.scss";
 function Me() {
 	return (
 		<>
-			<div className="card">
-				<h2 className="cardTitle">Banu Tryon</h2>
-				<img className="cardImg" src="/images-videos/banu.jpg" alt="banu" />
+			<div className="myPic">
+				<h2 className="myPic__title">Banu Tryon</h2>
+				<img className="myPic__Img" src="/images-videos/banu.jpg" alt="banu" />
 			</div>
 		</>
 	);

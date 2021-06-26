@@ -1,6 +1,8 @@
 $primary-color: #2f2f2f;
-$secondary-color: #89d2ff;
-$third-color: rgba(167, 167, 167, 0.893);
+$secondary-color: #0cbec8;
+$third-color: rgba(246, 248, 254, 0.893);
+$forth-color: rgb(213, 113, 6);
+$text-color: #253069;
 
 * {
     box-sizing: border-box;
@@ -37,5 +39,41 @@ $third-color: rgba(167, 167, 167, 0.893);
 @mixin media-xl {
     @media screen and (min-width: 1600px) {
         @content;
+    }
+}
+
+@keyframes transistionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-50deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@keyframes transistionIn2 {
+    from {
+        opacity: 0;
+        transform: rotateY(80deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
+
+@keyframes transistionIn3 {
+    0% {
+        opacity: 0;
+        transform: translate(-400px, 0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0)
     }
 }

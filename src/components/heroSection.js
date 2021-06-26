@@ -10,7 +10,7 @@ function HeroSection() {
 
 	return (
 		<section className="home">
-			<div className="home_text">
+			<div className="home__text">
 			
 				<h2>Hi! My name is</h2>
 				<h1 className="home__name">
@@ -21,7 +21,7 @@ function HeroSection() {
 				
 				
 				<div className="home__link">
-					<Link to="projects" smooth={true} duration={100}>
+					<Link to="projects" smooth={true} duration={2000}>
 						Check Out My Work
 					</Link>
 				</div>

@@ -1,8 +1,5 @@
-:root {
-    --primary: #89d2ff;
-    --secondary: #1137b3cd;
-    --accent: #d78b2d;
-}
+@import 'config';
+
 
 .nav {
     height: 100px;
@@ -20,9 +17,10 @@
     padding-top: 0px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    background: linear-gradient(180deg, rgb(21, 21, 21) 0%, rgb(2, 67, 136) 100%);
+    background: rgba(21, 21, 21, .65);
 
 }
+
 
 .nav .navLogo {
     float: left;
@@ -72,7 +70,7 @@
 }
 
 .nav div.main_list ul li {
-    margin-top: 10px;
+
     width: auto;
     height: 70px;
     padding-right: 3rem;
@@ -87,7 +85,7 @@
 }
 
 .nav div.main_list ul li .li:hover {
-    color: var(--primary)
+    color: $secondary-color;
 }
 
 .navTrigger {

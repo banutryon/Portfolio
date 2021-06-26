@@ -1,90 +1,85 @@
-:root {
-    --primary: #406d59;
-    --secondary: #1137b3cd;
-    --accent: #d78b2d;
-}
+@import 'config';
 
-.card {
+.myPic {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 1rem auto;
-    width: 120px;
-    height: 140px;
-    box-shadow: 0.50rem -0.5rem 0 var(--secondary),
-        0 -0.5rem 0 var(--primary),
-        -0.4rem -1rem 0 var(--accent);
+    height: 15rem;
+    width: 13rem;
+    box-shadow: 0.50rem -0.5rem 0 #{$secondary-color},
+    0 -0.5rem 0 #{$primary-color},
+    -0.4rem -1rem 0 #{$forth-color};
     clip-path: circle(25%);
     animation: circle-grow 2000ms 450ms forwards;
     background-image: linear-gradient(to top right,
-            var(--primary) 15%,
-            transparent),
-        radial-gradient(circle at bottom right,
-            transparent 5%,
-            var(--secondary) 5%,
-            var(--secondary) 20%,
-            transparent 10%,
-            transparent 22%,
-            var(--secondary) 20%,
-            transparent 40%);
-    float: left;
-    margin: 20px 15px 0 7px;
+        #{$primary-color} 15%,
+        transparent),
+    radial-gradient(circle at bottom right,
+        transparent 5%,
+        #{$forth-color} 5%,
+        #{$forth-color} 20%,
+        transparent 10%,
+        transparent 22%,
+        #{$forth-color} 20%,
+        transparent 40%);
+    float: right;
+    margin: 1.25rem 1.5rem;
+
+    &__Img {
+        height: 15rem;
+        width: 13rem;
+        display: block;
+        grid-column: 1 / -1;
+        grid-row: 1 / 3;
+        align-self: center;
+        clip-path: polygon(20% 8%,
+                50% 2%,
+                80% 50%,
+                54% 90%,
+                15% 65%);
+        transition: clip-path 400ms ease-in-out;
+        mix-blend-mode: multiply;
+        filter: grayscale(.5) contrast(1.5) brightness(1);
+    }
+
+    &__title {
+        margin: 0 0 20px 0;
+        grid-column: 1 / 5;
+        grid-row: 2 / span 1;
+        align-self: center;
+        padding: 0.25em;
+        position: relative;
+        z-index: 1;
+        font-size: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: ghostwhite;
+        clip-path: inset(50% 50%);
+        animation: heading-in 400ms 1000ms forwards;
+    }
 
 }
 
-.card:hover .cardImg {
+.myPic:hover .myPic__Img {
     clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
     filter: grayscale(0);
 }
 
-.card::after {
+.myPic::after {
     content: "";
     grid-column: 5 / 6;
     grid-row: 1 / 3;
     background: linear-gradient(to bottom left,
-            var(--accent) 15%,
-            transparent);
+        #{$forth-color} 15%,
+        transparent);
     mix-blend-mode: multiply;
     clip-path: circle(10%);
     transition: clip-path 400ms ease-in-out;
 
-
 }
 
-.card:hover::after {
+.myPic:hover::after {
     clip-path: circle(50%);
-}
-
-.cardTitle {
-    margin: 0 0 20px 0;
-    grid-column: 1 / 5;
-    grid-row: 2 / span 1;
-    align-self: center;
-    padding: 0.25em;
-    position: relative;
-    z-index: 1;
-    font-size: 3vmin;
-    text-align: center;
-    text-transform: uppercase;
-    color: ghostwhite;
-    clip-path: inset(50% 50%);
-    animation: heading-in 400ms 1000ms forwards;
-}
-
-.cardImg {
-    height: 250px;
-    width: 150px;
-    display: block;
-    grid-column: 1 / -1;
-    grid-row: 1 / 3;
-    align-self: center;
-    clip-path: polygon(20% 8%,
-            50% 2%,
-            80% 50%,
-            54% 90%,
-            15% 65%);
-    transition: clip-path 400ms ease-in-out;
-    mix-blend-mode: multiply;
-    filter: grayscale(.5) contrast(1.5) brightness(1);
 }
 
 
@@ -101,27 +96,26 @@
 }
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1060px) {
 
-    .card {
+    .myPic {
         height: 350px;
         width: 300px;
         right: 30vw;
         top: 180px;
-        margin: 20px 20px 10px 0;
+        margin: 1.25rem 2rem;
+
+        &__Img {
+            height: 350px;
+            width: 250px;
+        }
+
+        &__title {
+            font-size: 2vmin;
+        }
     }
 
-    .card:hover {
+    .myPic:hover {
         clip-path: circle(100%);
     }
-
-    .cardImg {
-        height: 350px;
-        width: 250px;
-    }
-
-    .cardTitle {
-        font-size: 2vmin;
-    }
-
 }

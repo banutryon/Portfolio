@@ -1,48 +1,72 @@
 import React, { useState } from "react";
 import "../scss/about.scss";
 import Me from "./myPic";
+
 function About() {
-	// const [icon, setIcon] = useState(false);
+	const [bio, setBio] = useState(false);
+	const [skill, setSkill] = useState(false);
+    const [link, setLink] = useState(false);
+    const changeBio = () => {
+		if (window.scrollY >= 150) {
+			setBio(true);
+		} else {
+			setBio(false);
+		}
+	};
+    const changeSkill = () => {
+		if (window.scrollY > 350) {
+			setSkill(true);
+		} else {
+			setSkill(false);
+		}
+	};
+     const changeLink = () => {
+		if (window.scrollY > 450) {
+			setLink(true);
+		} else {
+			setLink(false);
+		}
+	};
+
+    window.addEventListener("scroll", changeSkill);
+    window.addEventListener("scroll", changeBio);
+    window.addEventListener("scroll", changeLink);
+
 	return (
-		<section className="about">
-			<span className="text">
-			<Me />
-			<div className="about__bio">
+        
+		<section className= "about">
+            <span className="text">
+			<div className={ bio ? "about__bio about__scroll" : "about__bio"}>
+                <Me />
 				<h2 className="text-secondary">BIO</h2>
-				<p><strong>Softwear Engineer</strong> with skills in <strong>React</strong> and <strong>JavaScript</strong> and 15 years experience in the consumer electronics and mobile phone industry with a focus on the user experience. Strong foundation in front-end software development and JavaScript fundamentals. Passion to provide the best experience through technology strengthens my ability to learn and master new ways to build rich end-to-end user experiences. 
+				<p>  Tech enthusiast with a passion for developing innovative digital content focused on the user experience. Skilled leader with 15 years of experience and the proven ability to motivate, educate, and manage a team of professionals. Strategic thinker and adaptable creator to develop software that is customized to meet a company’s organizational needs, highlight their core values, and further their success. 
+                </p>
+                <br></br>
+                <p>
+                With skills in <strong>React</strong>, <strong>JavaScript</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>SASS</strong>, and <strong>MongoDB</strong>, among others. Confident problem-solving abilities to overcome glitches with creative solutions that are strategically designed to last long-term. Strong communication skills and the ability to acquire user feedback to determine modifications for optimal user experience.
 				</p>
 			</div>
             
         
-        <div className="jobs">
-            <div className="jobs__job">
-                <h2 className="text-secondary">2019-2020</h2>
-                <h3>Garten</h3>
-                <h6>Account Manager</h6>
-                <p>Performed bug hunts on the user experience side of our custom app for client inventory management. </p>
-                <p>Set up bug fix tickets focused on MVP features.</p>
+        <div className={ skill ? "skills skills__scroll" : "skills"}>
+            <div className="skills__set">
+                <h3 className="text-secondary">1. Research</h3>
+                <p>Become a subject matter expert after doing a thorough assessment of the clients needs. Determine methods to address the specific must haves of the customer.  </p>
             </div>
-            <div className="jobs__job">
-                <h2 className="text-secondary">2012-2019</h2>
-                <h3>Bose Corp</h3>
-                <h6>Product Manager(Territory account manager)</h6>
-                <p>Tested Bose products and app support before release and collaborated with the tech team about any  issues. </p>
-                <p>Experience in making big decisions and creating innovations that impacted hundreds of thousands of customers.</p>
-                <p>Influence decision makers resulting in an average yearly quota of 35 million (covering 5 states and 350+ storefronts)</p>
-                <p>Built a culture of accountability, became one of the top-ranked territories in the nation for 5 years straight. </p>
+            <div className="skills__set">
+                <h3 className="text-secondary">2. Design</h3>
+                <p>Become a subject matter expert after doing a thorough assessment of the clients needs. Determine methods to address the specific must haves of the customer.  </p>
             </div>
-            <div className="jobs__job">
-                <h2 className="text-secondary">2006-2012</h2>
-                <h3>BestBuy</h3>
-                <h6>Mobile Manager Manager</h6>
-                <p>Lead a team in becoming one of the best performing teams in BestBuy Mobile history (helped launch BBM). Growing the business by 150% to 300% Y.O.Y for 5 years. </p>
-                <p>Connected with local realtors and set up training classes on smartphone/app integration in the real estate market (2006-2010). </p>
-                
+            <div className="skills__set">
+                <h3 className="text-secondary">3. Develop</h3>
+                <p>Become a subject matter expert after doing a thorough assessment of the clients needs. Determine methods to address the specific must haves of the customer.  </p>
             </div>
+            
+            
         </div>
-            <div className="social-icons">
-                <a href="#!"> <i className="fab fa-linkedin fa-2x"></i></a>
-                <a href="#!"> <i className="fab fa-github fa-2x"></i></a>
+            <div className={ link ? "social-icons social-icons__scroll" : "social-icons"}>
+                <a href="https://www.linkedin.com/in/tryon-experiences"> <i className="fab fa-linkedin fa-2x "></i></a>
+                <a href="https://github.com/banutryon?tab=repositories"> <i className="fab fa-github fa-2x "></i></a>
                 <a className="resume" href="/resume.pdf" target="_newtab" download>
 					<img src="./icons/file.png" alt="resume" target="_newtab" download />
 					<p>Click to download Resume</p>
