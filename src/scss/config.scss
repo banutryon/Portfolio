@@ -1,7 +1,7 @@
 $primary-color: #2f2f2f;
 $secondary-color: #0cbec8;
 $third-color: rgba(246, 248, 254, 0.893);
-$forth-color: rgb(213, 113, 6);
+$forth-color: rgba(22, 81, 35, 0.88);
 $text-color: #253069;
 
 * {
@@ -80,16 +80,27 @@ $text-color: #253069;
 
 @keyframes transistionIn4 {
     0% {
-
+        opacity: 0;
         transform: translate(0, 900px)
     }
 
     100% {
-
+        opacity: 1;
         transform: translate(0, 0)
     }
 }
 
+@keyframes transistionIn5 {
+    from {
+        opacity: 0;
+        transform: rotateX(-50deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
 
 /* The typing effect */
 @keyframes typing {

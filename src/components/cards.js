@@ -7,10 +7,11 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 function Cards() {
 	return (
 		<section className="cards" id="projects">
-			<h1 className="h_1">Check out some of my projects!</h1>
+			
+			<h1 className="h_1">Check out my projects!</h1>
 			<div className="cardsContainer">
 				{/* <div className="cardsrapper"> */}
-				<ul className="cardsItems">
+				<ul className="cardItems">
 					
 					<Carousel className="card">
 						<li className="card__Item">
@@ -27,13 +28,14 @@ function Cards() {
 									/>
 								</ExternalLink>
 								<div className="card__ItemInfo">
-									<h4 className="cards_h4">Full CRUD</h4>
-									<h5 className="cards_h5">
+									<h4 className="card__h4">Full CRUD</h4>
+									<h5 className="card__h5">
 										Built using Node.js, Mongoose, Express and EJS
 									</h5>
 								</div>
 								<div className="link_div">
 									<div className="git_link">
+										
 										<ExternalLink
 											className="apps_link"
 											href="https://github.com/banutryon/Project-2"
@@ -63,6 +65,7 @@ function Cards() {
 						<li className="card__Item">
 							<div className="card__ItemLink">
 								<ExternalLink href="https://memeball.herokuapp.com/">
+									<img className="mac" src="/images-videos/macbook.png" alt="mac"></img>
 									<video
 										className="card__ItemVid"
 										alt="Project vids"
@@ -107,6 +110,7 @@ function Cards() {
 						<li className="card__Item">
 							<div className="card__ItemLink">
 								<ExternalLink href="https://banutryon.github.io/SuperHero-Project-1/">
+									<img className="mac" src="/images-videos/macbook.png" alt="mac"></img>
 									<video
 										className="card__ItemVid"
 										alt="Project vids"
@@ -150,6 +154,7 @@ function Cards() {
 						<li className="card__Item ">
 							<div className="card__ItemLink tesla_project">
 								<ExternalLink href="https://tesla-app-front.herokuapp.com/">
+									<img className="mac" src="/images-videos/macbook.png" alt="mac"></img>
 									<video
 										className="card__ItemVid tesla_vid"
 										alt="Project vids"

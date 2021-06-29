@@ -14,16 +14,26 @@ function Tech() {
 	}
 
     const [tech, setTech] = useState(false);
- 
-    const changeTech = () => {
-		if (window.scrollY > 1200) {
+	const [tech1, setTech1] = useState(false);
+    
+	const changeTech = () => {
+		if (window.scrollY > 1300) {
 			setTech(true);
 		} else {
 			setTech(false);
 		}
 	};
 
+	const changeTech1 = () => {
+		if (window.scrollY > 1500) {
+			setTech1(true);
+		} else {
+			setTech1(false);
+		}
+	};
+
     window.addEventListener("scroll", changeTech);
+    window.addEventListener("scroll", changeTech1);
 
 
 	return (
@@ -77,7 +87,7 @@ function Tech() {
 					<img className="icon" src="/Icons/figma.png" alt="technologies" />
 				</li>
 			</ul>
-			<div className="float">
+			<div className={ tech1 ? "float scroll__float" : "float"}>
 				<img
 					className="pdf"
 					onClick={openModal}
@@ -93,7 +103,7 @@ function Tech() {
 					contentLabel="Example Modal"
 				>
 					<form>
-						<img className="cert" src="/cert.jpg" alt="cert" />
+						<img className="cert" src="/cert1.png" alt="cert" />
 						<Link
 							to="technologies"
 							smooth={true}

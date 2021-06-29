@@ -1,47 +1,49 @@
-:root {
-    --primary: #406d59;
-    --secondary: #1137b3cd;
-    --accent: #d78b2d;
-}
+@import 'config';
 
 #projects {
-    padding: 4rem;
-    background: aliceblue;
+    padding-top: 4rem;
+    background: $third-color;
     height: 100vh;
 }
 
 .mac {
-    width: 100vw;
+    max-width: 100%;
     margin-bottom: -300px;
 }
 
 .h_1 {
     text-align: center;
-    padding: 1em 0 2em 0;
+    padding: 2em 0 1em 0;
     font-size: 30px;
     margin-bottom: 50px;
-    color: #45484a;
+    color: $text-color;
 
 }
 
-.card {
-    width: 100vw;
+.cardItems {
+    margin: 0 auto;
+}
 
-    &__Item {
-        margin: 0 auto;
-        height: auto;
-        width: 80vw;
-        border: 2px solid red;
+.card {
+    width: 96vw;
+    margin: 0 auto;
+    // border: 2px solid red;
+
+    .control-arrow,
+    .control-next {
+        background: rgba(7, 7, 7, 0.195) !important;
     }
 
-    &__Items {
-        margin: 50px;
-
+    &__Item {
+        // border: 2px solid red;
+        margin: 0 auto;
+        width: 90vw;
+        padding-bottom: 20px;
     }
 
     &__ItemLink {
         display: block;
-        margin: 10px 0 0 40px;
+        margin: 0 auto;
         width: 400px;
         overflow: hidden;
         text-decoration: none;
@@ -59,38 +61,38 @@
         cursor: pointer;
     }
 
-    &__ItemVid:hover {
-        transform: scale(1.1);
-    }
 
     &__ItemInfo {
+        width: 300px;
         border-radius: 10px;
-        margin-top: 20px;
+        margin: 40px auto 0 auto;
         height: 70px;
         padding: 5px;
         text-align: center;
-        background-color: #d78a2d;
+        background-color: rgba(53, 53, 55, 0.181);
+        box-shadow: 2px 2px 2px 2px rgba(28, 28, 28, 0.4);
+    }
 
+    &__h4 {
+        color: $text-color;
+        margin-top: 5px;
+    }
+
+    &__h5 {
+        color: $text-color;
+        font-size: 12px;
+        line-height: 24px;
+        margin: 5px;
     }
 }
 
-.cards_h4 {
-    color: white;
-}
 
-.cards_h5 {
-    color: white;
-    font-size: 12px;
-    line-height: 24px;
-    margin-bottom: 10px;
-}
 
 .link_div {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
-
+    margin-top: 10px;
 }
 
 .app {
@@ -98,22 +100,21 @@
     background-color: rgba(255, 255, 255, 0.954);
     border-radius: 25%;
     cursor: pointer;
-
 }
 
-.git_link {
-    width: 60px;
-    height: 60px;
-}
-
+.git_link,
 .app_link {
     width: 60px;
     height: 60px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(28, 28, 28, 0.4);
+    margin: 20px;
 }
 
 .apps_link {
-    padding: 5px 5px 40px 5px;
+    padding-bottom: 40px;
 }
+
 
 @media only screen and (min-width: 1200px) {
     /* .contentBlogContainer {
