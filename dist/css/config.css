@@ -33,7 +33,7 @@
 
 @-webkit-keyframes transistionIn2 {
   from {
-    opacity: 0;
+    opacity: .2;
     -webkit-transform: rotateY(80deg);
             transform: rotateY(80deg);
   }
@@ -46,7 +46,7 @@
 
 @keyframes transistionIn2 {
   from {
-    opacity: 0;
+    opacity: .2;
     -webkit-transform: rotateY(80deg);
             transform: rotateY(80deg);
   }
@@ -80,6 +80,58 @@
     opacity: 1;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes transistionIn4 {
+  0% {
+    -webkit-transform: translate(0, 900px);
+            transform: translate(0, 900px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes transistionIn4 {
+  0% {
+    -webkit-transform: translate(0, 900px);
+            transform: translate(0, 900px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  10% {
+    opacity: 1;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+@keyframes typing {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  10% {
+    opacity: 1;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=config.css.map */

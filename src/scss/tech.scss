@@ -1,68 +1,143 @@
-:root {
-    --primary: #406d59;
-    --secondary: #1137b3cd;
-    --accent: #d78b2d;
-}
+@import 'config';
 
-#tech {
-    background-color: rgb(0, 16, 70);
-}
-
-.techContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* background-color: lightgray; */
-    justify-content: center;
-    padding: 4em 0 2em 0;
-    margin-top: -40px;
-
-}
-
-.techContainer li {
-    /* width: 64px; */
-    margin: 10px 20px;
-    list-style-type: none;
-    background-color: white;
-    border-radius: 20%;
-}
-
-.tech_h1 {
-    text-align: center;
-    padding-top: 100px;
-    font-size: 24px;
-    color: white;
-}
-
-.icon_v1 {
-    width: 44px;
-    height: 44px;
-}
-
-.icon {
-    width: 44px;
-    height: 44px;
-
-
-}
-
-.pdf {
-    width: 80px;
-
-    float: left;
-}
-
-.float {
+.tech {
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    background-color: $third-color;
+    height: 100vh;
     position: relative;
-    margin: 15px auto;
-    width: 80vw;
-    line-height: 20px;
+
+
+    &__h1 {
+        text-align: center;
+        padding-top: 100px;
+        font-size: 24px;
+        color: $text-color;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 4em 0 2em 0;
+        margin-top: -40px;
+
+        li {
+            /* width: 64px; */
+            margin: 10px 10px;
+            list-style-type: none;
+            background-color: white;
+            border-radius: 20%;
+            box-shadow: 2px 2px 2px 2px rgba(28, 28, 28, 0.359);
+
+            .icon_v1 {
+                width: 44px;
+                height: 44px;
+            }
+
+            .icon {
+                width: 44px;
+                height: 44px;
+            }
+        }
+    }
+
+    .float {
+        position: relative;
+        margin: 15px auto;
+        width: 90vw;
+        line-height: 20px;
+        box-shadow: 0px 0px 20px 0px rgba(28, 28, 28, 0.359);
+        border-radius: 20px;
+        padding: .5rem;
+    }
+
+    .pdf {
+        margin: 10px;
+        float: left;
+        border-radius: 20%;
+    }
+
+    .pdf:hover {
+        box-shadow: 2px 2px 2px 2px rgba(28, 28, 28, 0.359);
+    }
+
+    .p__tag {
+        position: relative;
+        text-align: left;
+        color: rgb(21, 20, 20);
+        font-size: 1.2rem;
+        padding: 5px auto;
+        line-height: 1.5rem;
+        z-index: 1;
+    }
 }
 
-.p_tag {
-    text-align: justify;
-    color: white;
-    font-size: 10px;
+.list__icon {
+    visibility: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.scroll__1 {
+    animation: transistionIn4 1.2s;
+    visibility: visible;
+}
+
+.scroll__2 {
+    animation: transistionIn4 1.4s;
+    visibility: visible;
+}
+
+.scroll__3 {
+    animation: transistionIn4 1.6s;
+    visibility: visible;
+}
+
+.scroll__4 {
+    animation: transistionIn4 1.8s;
+    visibility: visible;
+}
+
+.scroll__5 {
+    animation: transistionIn4 2s;
+    visibility: visible;
+}
+
+.scroll__6 {
+    animation: transistionIn4 2.2s;
+    visibility: visible;
+}
+
+.scroll__7 {
+    animation: transistionIn4 2.4s;
+    visibility: visible;
+}
+
+.scroll__8 {
+    animation: transistionIn4 2.6s;
+    visibility: visible;
+}
+
+.scroll__9 {
+    animation: transistionIn4 2.8s;
+    visibility: visible;
+}
+
+.scroll__10 {
+    animation: transistionIn4 3s;
+    visibility: visible;
+}
+
+.scroll__11 {
+    animation: transistionIn4 3.2s;
+    visibility: visible;
+}
+
+.scroll__12 {
+    animation: transistionIn4 3.4s;
+    visibility: visible;
 }
 
 .cert {
@@ -74,88 +149,81 @@
     color: white;
     margin: 10px auto;
     background-color: rgb(0, 16, 70);
-    width: 75px;
-    padding: 10px;
-    font-size: 16px;
+    width: 5rem;
+    padding: 0.7rem;
+    font-size: 1rem;
     outline: none;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 0.7rem;
 }
 
 .modal {
     outline: none;
-    margin-top: 75px;
+    margin-top: 4rem;
 }
 
+
+
+
+
+
 @media only screen and (min-width: 1024px) {
-    .float {
-        display: block;
-        margin: 100px auto 0 auto;
-        width: 70vw;
-        height: 200px;
-        line-height: 20px;
-    }
 
-    .modal {
-        outline: none;
-        width: 40vw;
-        height: 80vh;
-        display: block;
-        margin: 75px auto;
-        cursor: pointer;
-    }
+    .tech {
+        &__h1 {
+            font-size: 3rem;
+        }
 
-    .techContainer {
-        margin-top: 10px;
-    }
+        &__container {
+            margin-top: 10px;
 
-    .tech_h1 {
-        padding-top: 130px;
-        font-size: 30px;
-    }
+            li {
 
-    .icon_v1,
-    .icon {
-        width: 64px;
-        height: 64px;
-    }
+                .icon_v1 {
+                    width: 5rem;
+                    height: 5rem;
+                }
 
-    .pdf {
-        width: 100px;
-        cursor: pointer;
-    }
+                .icon {
+                    width: 5rem;
+                    height: 5rem;
+                }
+            }
+        }
 
-    .p_tag {
-        font-size: 20px;
-        word-spacing: 3px;
-        font-weight: 200;
-        padding: 2px;
-        line-height: 28px;
+        .float {
+            display: block;
+            margin: 2rem auto 0 auto;
+            width: 78vw;
+            line-height: 20px;
+            padding: 2rem;
+
+        }
+
+        .pdf {
+            width: 7rem;
+            margin: 5px;
+        }
+
+        .p__tag {
+            font-size: 1.6rem;
+            margin: .5rem;
+            line-height: 2.5rem;
+        }
+
     }
 
     .cert {
-        width: 100%;
-        cursor: pointer;
-
-    }
-
-    .modal_btn {
+        width: 50%;
         display: block;
-        color: white;
-        margin: 10px auto;
-        background-color: rgb(0, 16, 70);
-        width: 75px;
-        padding: 10px;
-        font-size: 16px;
-        outline: none;
-        text-align: center;
-        border-radius: 10px;
-        cursor: pointer;
+        padding-top: .4rem;
+        margin: 0 auto;
     }
 
-    #modal_tech {
-        cursor: pointer;
-    }
+
+
+
+
 
 
 }

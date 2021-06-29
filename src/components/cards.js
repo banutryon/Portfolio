@@ -8,16 +8,17 @@ function Cards() {
 	return (
 		<section className="cards" id="projects">
 			<h1 className="h_1">Check out some of my projects!</h1>
-
 			<div className="cardsContainer">
 				{/* <div className="cardsrapper"> */}
 				<ul className="cardsItems">
-					<Carousel className="car">
-						<li className="cardsItem">
-							<div className="cardsItemLink">
+					
+					<Carousel className="card">
+						<li className="card__Item">
+							<div className="card__ItemLink">
 								<ExternalLink href="https://tryon-experiences.herokuapp.com/tryon-experiences">
+									<img className="mac" src="/images-videos/macbook.png" alt="mac"></img>
 									<video
-										className="cardsItemVid"
+										className="card__ItemVid"
 										alt="Project vids"
 										src="/images-videos/PNW.mov"
 										autoPlay
@@ -25,7 +26,7 @@ function Cards() {
 										muted
 									/>
 								</ExternalLink>
-								<div className="cardsItemInfo">
+								<div className="card__ItemInfo">
 									<h4 className="cards_h4">Full CRUD</h4>
 									<h5 className="cards_h5">
 										Built using Node.js, Mongoose, Express and EJS
@@ -59,11 +60,11 @@ function Cards() {
 
 						{/* ============================================================== */}
 
-						<li className="cardsItem">
-							<div className="cardsItemLink">
+						<li className="card__Item">
+							<div className="card__ItemLink">
 								<ExternalLink href="https://memeball.herokuapp.com/">
 									<video
-										className="cardsItemVid"
+										className="card__ItemVid"
 										alt="Project vids"
 										src="/images-videos/8.mov"
 										autoPlay
@@ -71,7 +72,7 @@ function Cards() {
 										muted
 									/>
 								</ExternalLink>
-								<div className="cardsItemInfo">
+								<div className="card__ItemInfo">
 									<h4 className="cards_h4">MERN stack</h4>
 									<h5 className="cards_h5">
 										Built using Node.js, Mongoose, Express and React
@@ -103,11 +104,11 @@ function Cards() {
 						</li>
 						{/* ============================================================== */}
 
-						<li className="cardsItem">
-							<div className="cardsItemLink">
+						<li className="card__Item">
+							<div className="card__ItemLink">
 								<ExternalLink href="https://banutryon.github.io/SuperHero-Project-1/">
 									<video
-										className="cardsItemVid"
+										className="card__ItemVid"
 										alt="Project vids"
 										src="/images-videos/Marvel.mov"
 										autoPlay
@@ -115,7 +116,7 @@ function Cards() {
 										muted
 									/>
 								</ExternalLink>
-								<div className="cardsItemInfo">
+								<div className="card__ItemInfo">
 									<h4 className="cards_h4">Restful API</h4>
 									<h5 className="cards_h5">
 										Built with HTML, CSS, JavaScript and jQuery
@@ -146,11 +147,11 @@ function Cards() {
 							</div>
 						</li>
 						{/* ============================================================== */}
-						<li className="cardsItem ">
-							<div className="cardsItemLink tesla_project">
+						<li className="card__Item ">
+							<div className="card__ItemLink tesla_project">
 								<ExternalLink href="https://tesla-app-front.herokuapp.com/">
 									<video
-										className="cardsItemVid tesla_vid"
+										className="card__ItemVid tesla_vid"
 										alt="Project vids"
 										src="/images-videos/tesla.mov"
 										autoPlay
@@ -158,7 +159,7 @@ function Cards() {
 										muted
 									/>
 								</ExternalLink>
-								<div className="cardsItemInfo">
+								<div className="card__ItemInfo">
 									<h4 className="cards_h4">MERRN stack</h4>
 									<h5 className="cards_h5">
 										Built using Node.js, Mongoose, React and Redux
@@ -189,6 +190,7 @@ function Cards() {
 							</div>
 						</li>
 					</Carousel>
+					
 					{/* <CardItem
 							src="/images-videos/PNW.mov"
 							text="Built using Node.js, Mongoose, Express and EJS"

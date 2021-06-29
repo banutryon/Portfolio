@@ -16,8 +16,18 @@
 
     &__text {
         margin-top: -5.5rem;
-        animation: transistionIn 2s;
+        // animation: transistionIn 2s;
         color: rgb(230, 230, 230);
+
+        h2 {
+            // opacity: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            width: 225px;
+            animation: typing 5s steps(100, end),
+        }
     }
 
     &__line {
@@ -46,9 +56,15 @@
     }
 
     &__name {
-        font-size: 5rem;
+        font-size: 4rem;
         padding-bottom: 1rem;
-        margin-bottom: 1rem;
+        overflow: hidden;
+
+        white-space: nowrap;
+        opacity: 0;
+        margin: 0 auto 1rem auto;
+        letter-spacing: .15em;
+        animation: typing 4s 1s steps(100, end)forwards;
 
         &--last {
             color: $secondary-color;

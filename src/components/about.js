@@ -48,16 +48,16 @@ function About() {
 			</div>
             
         
-        <div className={ skill ? "skills skills__scroll" : "skills"}>
-            <div className="skills__set">
+        <div className="skills">
+            <div className={ skill ? "skills__set skills__scroll" : "skills__set"}>
                 <h3 className="text-secondary">1. Research</h3>
                 <p>Become a subject matter expert after doing a thorough assessment of the clients needs. Determine methods to address the specific must haves of the customer.  </p>
             </div>
-            <div className="skills__set">
+            <div className={ skill ? "skills__set skills__scroll" : "skills__set"}>
                 <h3 className="text-secondary">2. Design</h3>
                 <p>Become a subject matter expert after doing a thorough assessment of the clients needs. Determine methods to address the specific must haves of the customer.  </p>
             </div>
-            <div className="skills__set">
+            <div className={ skill ? "skills__set skills__scroll" : "skills__set"}>
                 <h3 className="text-secondary">3. Develop</h3>
                 <p>Become a subject matter expert after doing a thorough assessment of the clients needs. Determine methods to address the specific must haves of the customer.  </p>
             </div>

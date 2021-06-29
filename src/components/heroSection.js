@@ -17,7 +17,7 @@ function HeroSection() {
 					Banu
 				<span className="home__name--last">Tryon</span></h1>
 				<div className="home__line"></div>
-				<h2>Web Developer, Designer & Programmer</h2>
+				<h3>Web Developer, Designer & Programmer</h3>
 				
 				
 				<div className="home__link">

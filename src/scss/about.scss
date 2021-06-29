@@ -2,22 +2,23 @@
 
 
 .about {
-    padding: 6rem 0 2rem 0;
+    padding: 4rem 0 2rem 0;
     background-color: $third-color;
-    height: 130vh;
+    height: 100vh;
 
 
     &__bio {
         width: 90%;
         color: $primary-color;
-        margin: 2rem auto 0 auto;
+        margin: 1.5rem auto 0 auto;
         padding: .3rem;
         display: none;
         font-size: .9rem;
 
         .text-secondary {
-            padding-bottom: 3rem;
+            padding-bottom: 1rem;
             text-align: center;
+            color: $text-color;
 
         }
     }
@@ -35,38 +36,41 @@
 
     .skills {
         width: 90vw;
-        margin: 1rem auto;
-        display: none;
+        margin: .5rem auto 0 auto;
+        text-align: center;
 
-        // display: grid;
-        // grid-template-columns: 1fr;
-        // grid-gap: 1rem;
+        &__set {
+            padding: .2rem;
+            display: none;
+
+            h3 {
+                margin: .2rem 0;
+                text-align: center;
+                font-size: 1.4rem;
+                color: $text-color;
+            }
+        }
+
         &__scroll {
             display: block;
-            animation: transistionIn2 4s;
+            animation: transistionIn2 3s;
             display: flex;
             flex-direction: column;
         }
 
-        &__set {
-            padding: .5rem;
-            margin: 1rem;
-
-            h3 {
-                margin: .3rem 0;
-                text-align: center;
-                font-size: 2rem;
-                color: $text-color;
-            }
-        }
     }
 
     .social-icons {
         display: none;
         color: $secondary-color;
-        margin: 2rem 3rem;
-        font-size: 2rem;
+        margin: 1rem 3rem;
+        font-size: 1.6rem;
 
+
+        a {
+            width: 6rem;
+            text-align: center;
+        }
 
         &__scroll {
             display: flex;
@@ -76,8 +80,8 @@
         }
 
         .resume img {
-            height: 3.5rem;
-            width: 3.5rem;
+            height: 3rem;
+            width: 3rem;
         }
 
         .resume img:hover {
@@ -113,75 +117,77 @@
 
 @media screen and (min-width: 1060px) {
     .about {
-        padding: 6rem 0 2rem 0;
-        background-color: $third-color;
         height: 100vh;
 
-
         &__bio {
-            width: 90%;
-            text-align: center;
-
-            // background: rgba(0, 0, 0, 0.517);
-            // margin-bottom: .3rem;
-            // padding: .3rem;
-            .text-secondary {
-                padding-bottom: 1rem;
-            }
+            width: 80%;
+            font-size: 1.3rem;
         }
 
-        .jobs {
-            width: 65vw;
-            margin: 1rem auto 0 auto;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-gap: 1rem;
+        .skills {
+            width: 100vw;
+            text-align: center;
+            font-size: 1.4rem;
+            display: flex;
+            flex-direction: row;
 
-            &__job {
-                background: lighten($primary-color, 10%);
+
+
+            &__set {
                 padding: .5rem;
-                border-bottom: 5px solid $secondary-color;
-
-                h2,
-                h3 {
-                    margin: .5rem 0;
-                }
-
-                h6 {
-                    margin: .3rem 0;
-                }
+                margin: 3rem auto 3rem auto;
+                width: 30vw;
             }
         }
 
         .social-icons {
-            display: flex;
-            flex-direction: column;
+            display: none;
+            color: $secondary-color;
+            margin: 2rem 3rem;
+            font-size: 2rem;
 
-            .resume img {
-                height: 1.8rem;
-                width: 2rem;
+
+            &__scroll {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                animation: transistionIn3 3s;
             }
 
-            .resume p {
-                font-size: 10px;
-            }
+            // .resume img {
+            //     height: 3.5rem;
+            //     width: 3.5rem;
+            // }
+
+            // .resume img:hover {
+            //     height: 3.6rem;
+            //     width: 3.6rem;
+            // }
+
+            // .resume {
+            //     font-size: 10px;
+            //     color: $primary-color;
+            //     text-decoration: none;
+            //     text-align: center;
+            // }
+
+            // .resume:hover {
+            //     color: $secondary-color;
+            // }
+
+
         }
+
+        // .fa-github {
+        //     color: $primary-color;
+        // }
+
+        // .fa-linkedin {
+        //     color: #0A66C2;
+        // }
+
 
 
     }
 
 }
-
-// @media (min-width: $breakpoint-tablet) {
-//     .about {
-
-//         &__bio-image {
-//         background: linear-gradient(to right,
-//                 rgba($primary-color, .7),
-//                 rgba($primary-color, .1)),
-//             url('../img/6.jpg') center bottom;
-//         background-size: 100% 180%;
-//         background-repeat: no-repeat;
-//         }
-//     }
-// }
