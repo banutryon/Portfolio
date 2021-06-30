@@ -245,8 +245,8 @@
 }
 
 .form__scroll {
-  -webkit-animation: transistionIn6 2s;
-          animation: transistionIn6 2s;
+  -webkit-animation: transistionIn6 1s;
+          animation: transistionIn6 1s;
 }
 
 .form > input {

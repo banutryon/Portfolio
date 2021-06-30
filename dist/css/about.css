@@ -318,6 +318,10 @@
   text-align: center;
 }
 
+.about .social-icons .resume p {
+  font-size: .6rem;
+}
+
 .about .social-icons .resume:hover {
   color: #0cbfc8bc;
 }
