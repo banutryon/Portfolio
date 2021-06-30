@@ -211,13 +211,13 @@
 
 #contact {
   background-color: rgba(246, 248, 254, 0.893);
-  height: 90vh;
+  height: 100vh;
   margin: 5px auto;
   padding-top: 20px;
 }
 
 .contact_box > h1 {
-  margin-top: 30px;
+  margin-top: 90px;
   text-align: center;
   color: #253069;
   font-size: 24px;

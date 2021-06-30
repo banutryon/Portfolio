@@ -378,5 +378,9 @@
     -webkit-animation: transistionIn3 3s;
             animation: transistionIn3 3s;
   }
+  .about .social-icons .resume img {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
 }
 /*# sourceMappingURL=about.css.map */
