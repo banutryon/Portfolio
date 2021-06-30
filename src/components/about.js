@@ -68,7 +68,7 @@ function About() {
                 <a href="https://www.linkedin.com/in/tryon-experiences"> <i className="fab fa-linkedin fa-2x "></i></a>
                 <a href="https://github.com/banutryon?tab=repositories"> <i className="fab fa-github fa-2x "></i></a>
                 <a className="resume" href="/resume.pdf" target="_newtab" download>
-					<img src="./Icons/pdf.png" alt="resume" target="_newtab" download />
+					<img src="./Icons/file.png" alt="resume" target="_newtab" download />
 					<p>Download Resume</p>
 				</a>
             </div>

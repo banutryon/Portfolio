@@ -19,16 +19,12 @@
             padding-bottom: 1rem;
             text-align: center;
             color: $text-color;
-
         }
-
-
     }
 
     p {
         font-size: .8rem;
     }
-
 
     strong {
         color: $text-color;
@@ -58,7 +54,7 @@
             }
 
             p {
-                font-size: 1.2rem;
+                font-size: .8rem;
             }
         }
 
@@ -162,6 +158,10 @@
 
             }
 
+            p {
+                font-size: 1.6rem;
+            }
+
             &__set {
                 padding: .5rem;
                 margin: 3rem auto 3rem auto;
@@ -172,7 +172,7 @@
         .social-icons {
             display: none;
             color: $secondary-color;
-            margin: 2rem 3rem;
+            margin: 0;
             font-size: 2rem;
 
 
