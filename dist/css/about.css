@@ -153,6 +153,32 @@
   }
 }
 
+@-webkit-keyframes transistionIn6 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(400px, 400px);
+            transform: translate(400px, 400px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes transistionIn6 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(400px, 400px);
+            transform: translate(400px, 400px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
 /* The typing effect */
 @-webkit-keyframes typing {
   0% {
@@ -232,14 +258,14 @@
 .about .skills__set h3 {
   margin: .1rem 0;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #253069;
 }
 
 .about .skills__scroll {
   display: block;
-  -webkit-animation: transistionIn2 3s;
-          animation: transistionIn2 3s;
+  -webkit-animation: transistionIn2 2s;
+          animation: transistionIn2 2s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,8 +297,8 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-animation: transistionIn3 3s;
-          animation: transistionIn3 3s;
+  -webkit-animation: transistionIn3 2s;
+          animation: transistionIn3 2s;
 }
 
 .about .social-icons .resume img {

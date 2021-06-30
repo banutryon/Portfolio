@@ -153,6 +153,32 @@
   }
 }
 
+@-webkit-keyframes transistionIn6 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(400px, 400px);
+            transform: translate(400px, 400px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes transistionIn6 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(400px, 400px);
+            transform: translate(400px, 400px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
 /* The typing effect */
 @-webkit-keyframes typing {
   0% {
@@ -248,8 +274,8 @@
 }
 
 .tech .scroll__float {
-  -webkit-animation: transistionIn5 4s;
-          animation: transistionIn5 4s;
+  -webkit-animation: transistionIn5 2s;
+          animation: transistionIn5 2s;
   visibility: visible;
 }
 

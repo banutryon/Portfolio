@@ -28,7 +28,7 @@ export default function ContactMe() {
 const [form, setForm] = useState(false);
 
 const changeForm = () => {
-		if (window.scrollY >= 2400) {
+		if (window.scrollY >= 2200) {
 			setForm(true);
 		} else {
 			setForm(false);
