@@ -56,6 +56,10 @@
                 font-size: 1rem;
                 color: $text-color;
             }
+
+            p {
+                font-size: 1.2rem;
+            }
         }
 
         &__scroll {
@@ -132,17 +136,31 @@
 
         &__bio {
             width: 80%;
-            font-size: 1.3rem;
+            font-size: 1.8rem;
+
+            p {
+                font-size: 1.6rem;
+            }
+
+            .text-secondary {
+                padding-bottom: 1.6rem;
+                text-align: center;
+                color: $text-color;
+
+            }
         }
 
         .skills {
             width: 100vw;
             text-align: center;
-            font-size: 1.4rem;
             display: flex;
             flex-direction: row;
 
+            h3 {
 
+                font-size: 1.8rem;
+
+            }
 
             &__set {
                 padding: .5rem;

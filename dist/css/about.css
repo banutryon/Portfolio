@@ -262,6 +262,10 @@
   color: #253069;
 }
 
+.about .skills__set p {
+  font-size: 1.2rem;
+}
+
 .about .skills__scroll {
   display: block;
   -webkit-animation: transistionIn2 2s;
@@ -340,12 +344,19 @@
   }
   .about__bio {
     width: 80%;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
+  }
+  .about__bio p {
+    font-size: 1.6rem;
+  }
+  .about__bio .text-secondary {
+    padding-bottom: 1.6rem;
+    text-align: center;
+    color: #253069;
   }
   .about .skills {
     width: 100vw;
     text-align: center;
-    font-size: 1.4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -353,6 +364,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .about .skills h3 {
+    font-size: 1.8rem;
   }
   .about .skills__set {
     padding: .5rem;
