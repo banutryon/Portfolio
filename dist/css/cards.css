@@ -237,7 +237,7 @@
   margin: 0 auto;
   width: 74%;
   max-width: 680px;
-  min-height: 190px;
+  min-height: 175px;
   max-height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -248,8 +248,8 @@
 }
 
 .card__vid2 {
-  margin-top: 16px;
-  min-height: 200px;
+  margin-top: 12px;
+  min-height: 150px;
   max-height: 400px;
 }
 

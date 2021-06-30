@@ -17,7 +17,7 @@ function Tech() {
 	const [tech1, setTech1] = useState(false);
     
 	const changeTech = () => {
-		if (window.scrollY > 1300) {
+		if (window.scrollY > 1100) {
 			setTech(true);
 		} else {
 			setTech(false);
@@ -25,7 +25,7 @@ function Tech() {
 	};
 
 	const changeTech1 = () => {
-		if (window.scrollY > 1500) {
+		if (window.scrollY > 1150) {
 			setTech1(true);
 		} else {
 			setTech1(false);

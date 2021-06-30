@@ -31,6 +31,24 @@
   }
 }
 
+@-webkit-keyframes transistionVid {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes transistionVid {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes transistionIn2 {
   from {
     opacity: .2;
@@ -199,7 +217,7 @@
 
 .tech__container li {
   /* width: 64px; */
-  margin: 10px 10px;
+  margin: 5px 10px;
   list-style-type: none;
   background-color: white;
   border-radius: 20%;
@@ -208,20 +226,20 @@
 }
 
 .tech__container li .icon_v1 {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
 }
 
 .tech__container li .icon {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
 }
 
 .tech .float {
   position: relative;
-  margin: 15px auto;
+  margin: 0 auto;
   width: 90vw;
-  line-height: 20px;
+  line-height: 10px;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(28, 28, 28, 0.359);
           box-shadow: 0px 0px 20px 0px rgba(28, 28, 28, 0.359);
   border-radius: 20px;
@@ -239,8 +257,8 @@
   margin: 10px;
   float: left;
   border-radius: 20%;
-  width: 7rem;
-  height: 7rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .tech .pdf:hover {
@@ -252,7 +270,7 @@
 .tech .p__tag {
   text-align: left;
   color: #151414;
-  font-size: 1.2rem;
+  font-size: .8rem;
   padding: 5px auto;
   line-height: 1.5rem;
 }
