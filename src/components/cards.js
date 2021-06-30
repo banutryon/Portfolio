@@ -7,6 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 function Cards() {
 
 const [vid, setVid] = useState(false);
+const [icon, setIcon] = useState(false);
 const changeVid = () => {
 		if (window.scrollY >= 1800) {
 			setVid(true);
@@ -14,7 +15,16 @@ const changeVid = () => {
 			setVid(false);
 		}
 	};
+	const changeIcon = () => {
+		if (window.scrollY >= 1800) {
+			setIcon(true);
+		} else {
+			setIcon(false);
+		}
+	};
 window.addEventListener("scroll", changeVid);
+window.addEventListener("scroll", changeIcon);
+
 	return (
 		<section className="cards" id="projects">
 			
@@ -44,7 +54,7 @@ window.addEventListener("scroll", changeVid);
 										Built using Node.js, Mongoose, Express and EJS
 									</h5>
 								</div>
-								<div className="link_div">
+								<div className={ icon ? "link_div icon__scroll" : "link_div"}>
 									<div className="git_link">
 										
 										<ExternalLink
@@ -78,7 +88,7 @@ window.addEventListener("scroll", changeVid);
 								<ExternalLink href="https://memeball.herokuapp.com/">
 									<img className="mac" src="/images-videos/macbook.png" alt="mac"></img>
 									<video
-										className="card__ItemVid card__vid2"
+										className={ vid ? "card__ItemVid card__vid2 card__scroll" : "card__ItemVid card__vid2"}
 										alt="Project vids"
 										src="/images-videos/8.mov"
 										autoPlay
@@ -92,7 +102,7 @@ window.addEventListener("scroll", changeVid);
 										Built using Node.js, Mongoose, Express and React
 									</h5>
 								</div>
-								<div className="link_div">
+								<div className={ icon ? "link_div icon__scroll" : "link_div"}>
 									<div className="git_link">
 										<ExternalLink
 											className="apps_link"
@@ -123,7 +133,7 @@ window.addEventListener("scroll", changeVid);
 								<ExternalLink href="https://banutryon.github.io/SuperHero-Project-1/">
 									<img className="mac" src="/images-videos/macbook.png" alt="mac"></img>
 									<video
-										className="card__ItemVid"
+										className={ vid ? "card__ItemVid card__scroll" : "card__ItemVid"}
 										alt="Project vids"
 										src="/images-videos/Marvel.mov"
 										autoPlay
@@ -137,7 +147,7 @@ window.addEventListener("scroll", changeVid);
 										Built with HTML, CSS, JavaScript and jQuery
 									</h5>
 								</div>
-								<div className="link_div">
+								<div className={ icon ? "link_div icon__scroll" : "link_div"}>
 									<div className="git_link">
 										<ExternalLink
 											className="apps_link"
@@ -167,7 +177,8 @@ window.addEventListener("scroll", changeVid);
 								<ExternalLink href="https://tesla-app-front.herokuapp.com/">
 									<img className="mac" src="/images-videos/macbook.png" alt="mac"></img>
 									<video
-										className="card__ItemVid card__vid2"
+									
+										className={ vid ? "card__ItemVid card__vid2 card__scroll" : "card__ItemVid card__vid2"}
 										alt="Project vids"
 										src="/images-videos/tesla.mov"
 										autoPlay
@@ -181,7 +192,7 @@ window.addEventListener("scroll", changeVid);
 										Built using Node.js, Mongoose, React and Redux
 									</h5>
 								</div>
-								<div className="link_div">
+								<div className={ icon ? "link_div icon__scroll" : "link_div"}>
 									<div className="git_link">
 										<ExternalLink
 											className="apps_link"

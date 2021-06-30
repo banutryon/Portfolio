@@ -58,10 +58,14 @@ $text-color: #253069;
     from {
         opacity: 0;
 
+
+
     }
 
     to {
         opacity: 1;
+
+
 
     }
 }
@@ -111,6 +115,20 @@ $text-color: #253069;
     to {
         opacity: 1;
         transform: rotateX(0);
+    }
+}
+
+@keyframes transistionIn6 {
+    from {
+        opacity: 0;
+        // transform: rotateX(-80deg);
+        transform: translate(400px, 400px)
+    }
+
+    to {
+        opacity: 1;
+        // transform: rotateX(0);
+        transform: translate(0, 0)
     }
 }
 

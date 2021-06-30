@@ -67,17 +67,20 @@
         transition: all 0.2s linear;
         cursor: pointer;
         z-index: -3;
+        visibility: hidden;
 
     }
 
     &__vid2 {
+        visibility: hidden;
         margin-top: 12px;
         min-height: 150px;
         max-height: 400px;
     }
 
     &__scroll {
-        animation: transistionVid 2s;
+        visibility: visible;
+        animation: transistionVid 3s;
 
     }
 
@@ -112,6 +115,10 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
+}
+
+.icon__scroll {
+    animation: transistionIn3 4s;
 }
 
 .app {

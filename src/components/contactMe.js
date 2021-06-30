@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "../scss/contact.scss";
-import { ExternalLink } from "react-external-link";
 
 export default function ContactMe() {
 	function sendEmail(e) {
@@ -25,12 +24,26 @@ export default function ContactMe() {
 			);
 	}
 
+
+const [form, setForm] = useState(false);
+
+const changeForm = () => {
+		if (window.scrollY >= 2400) {
+			setForm(true);
+		} else {
+			setForm(false);
+		}
+	};
+
+window.addEventListener("scroll", changeForm);
+
+
 	return (
 		<section className="formcontainer" id="contact">
 			
 			<div className="contact_box">
 				<h1>Shoot Me An Email</h1>
-				<form className="form" onSubmit={sendEmail}>
+				<form className={ form ? "form form__scroll" : "form"} onSubmit={sendEmail}>
 					
 					<input type="hidden" className="input" />
 					<label id="label">Enter Name</label>
@@ -41,39 +54,7 @@ export default function ContactMe() {
 					<textarea className="message" name="message" />
 					<input id="button" type="submit" value="Send" />
 				</form>
-				{/* <div id="contact_icons">
-					<ExternalLink
-						className="link_contact"
-						href="https://www.linkedin.com/in/tryon-experiences"
-					>
-						<img
-							className="icon_contact"
-							src="/Icons/link.png"
-							alt="technologies"
-						/>
-					</ExternalLink>
-					<ExternalLink
-						className="link_contact"
-						href="https://www.facebook.com/banu.tryon/"
-					>
-						<img
-							className="icon_contact"
-							src="/Icons/face.png"
-							alt="technologies"
-						/>
-					</ExternalLink>
-
-					<ExternalLink
-						className="link_contact"
-						href="https://github.com/banutryon?tab=repositories"
-					>
-						<img
-							className="icon_contact"
-							src="/Icons/repo.png"
-							alt="technologies"
-						/>
-					</ExternalLink>
-				</div> */}
+				
 			</div>
 		</section>
 	);
