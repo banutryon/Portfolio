@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "../scss/cards.scss";
 // import CardItem from "./cardItem";
 import { ExternalLink } from "react-external-link";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 function Cards() {
+
+const [vid, setVid] = useState(false);
+const changeVid = () => {
+		if (window.scrollY >= 1800) {
+			setVid(true);
+		} else {
+			setVid(false);
+		}
+	};
+window.addEventListener("scroll", changeVid);
 	return (
 		<section className="cards" id="projects">
 			
@@ -15,11 +25,12 @@ function Cards() {
 					
 					<Carousel className="card">
 						<li className="card__Item">
-							<div className="card__ItemLink">
-								<ExternalLink href="https://tryon-experiences.herokuapp.com/tryon-experiences">
+							
+								<ExternalLink className="card__ItemLink" href="https://tryon-experiences.herokuapp.com/tryon-experiences">
 									<img className="mac" src="/images-videos/macbook.png" alt="mac"></img>
 									<video
-										className="card__ItemVid"
+									
+										className={ vid ? "card__ItemVid card__scroll" : "card__ItemVid"}
 										alt="Project vids"
 										src="/images-videos/PNW.mov"
 										autoPlay
@@ -56,7 +67,7 @@ function Cards() {
 										</ExternalLink>
 									</div>
 								</div>
-							</div>
+							
 						</li>
 						{/* ============================================================== */}
 
@@ -67,7 +78,7 @@ function Cards() {
 								<ExternalLink href="https://memeball.herokuapp.com/">
 									<img className="mac" src="/images-videos/macbook.png" alt="mac"></img>
 									<video
-										className="card__ItemVid"
+										className="card__ItemVid card__vid2"
 										alt="Project vids"
 										src="/images-videos/8.mov"
 										autoPlay
@@ -156,7 +167,7 @@ function Cards() {
 								<ExternalLink href="https://tesla-app-front.herokuapp.com/">
 									<img className="mac" src="/images-videos/macbook.png" alt="mac"></img>
 									<video
-										className="card__ItemVid tesla_vid"
+										className="card__ItemVid card__vid2"
 										alt="Project vids"
 										src="/images-videos/tesla.mov"
 										autoPlay

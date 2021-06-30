@@ -7,15 +7,18 @@
 }
 
 .mac {
-    max-width: 100%;
-    margin-bottom: -75%;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: -76.5%;
+    margin-top: -40px;
+
 }
 
 .h_1 {
     text-align: center;
     padding: 2em 0 1em 0;
     font-size: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     color: $text-color;
 
 }
@@ -49,24 +52,39 @@
         text-decoration: none;
     }
 
+
+
     &__ItemVid {
-        display: block;
+
+        // display: block;
+        position: relative;
         margin: 0 auto;
-        width: 60vw;
-        height: 20vh;
-        min-height: 10rem;
-        max-height: 80vh;
-        max-height: 100%;
+        width: 74%;
+        max-width: 680px;
+        min-height: 190px;
+        max-height: 400px;
         object-fit: cover;
         transition: all 0.2s linear;
         cursor: pointer;
+        z-index: -3;
+
     }
 
+    &__vid2 {
+        margin-top: 16px;
+        min-height: 200px;
+        max-height: 400px;
+    }
+
+    &__scroll {
+        animation: transistionVid 2s;
+
+    }
 
     &__ItemInfo {
         width: 300px;
         border-radius: 10px;
-        margin: 40px auto 0 auto;
+        margin: 50px auto 0 auto;
         height: 70px;
         padding: 5px;
         text-align: center;
@@ -133,42 +151,42 @@
 @media only screen and (min-width: 900px) {
 
     .mac {
-        max-width: 200%;
-        margin: -150px auto -500px auto;
+        max-width: 875px;
+        margin-bottom: -66.5%;
+        margin-top: -190px;
     }
 
     .h_1 {
         font-size: 3rem;
-        margin-bottom: .5rem;
+        margin-bottom: 0;
     }
 
     .card {
-        width: 60vw;
-        margin: 0 auto;
-
+        width: 80vw;
 
         &__ItemLink {
-            width: 50vw;
-
+            width: 60vw;
         }
 
         &__ItemVid {
-            border-radius: 10px;
-            display: block;
-            margin: 0 auto;
-            width: 300px;
-            height: 195px;
-            max-height: 100%;
-            object-fit: cover;
-            transition: all 0.2s linear;
-            cursor: pointer;
+            width: 75%;
+            max-width: 645px;
+            min-height: 190px;
+            max-height: 460px;
+
         }
 
+        &__vid2 {
+            margin-top: 24px;
+            margin-bottom: 18px;
+            min-height: 420px;
+            max-height: 400px;
+        }
 
         &__ItemInfo {
             width: 300px;
             border-radius: 10px;
-            margin: 40px auto 0 auto;
+            margin: 40px auto 0px auto;
             height: 70px;
             padding: 5px;
             text-align: center;

@@ -1,14 +1,11 @@
-:root {
-    --primary: #406d59;
-    --secondary: #1137b3cd;
-    --accent: #d78b2d;
-}
+@import 'config';
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
+    margin-top: -80px;
     height: 80px;
     width: 100vw;
     bottom: 0;
@@ -21,7 +18,7 @@
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.954);
     margin: 0 50px 0 50px;
-    border-radius: 25%;
+    border-radius: 10%;
     cursor: pointer;
 }
 

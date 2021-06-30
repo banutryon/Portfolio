@@ -1,5 +1,5 @@
 $primary-color: #2f2f2f;
-$secondary-color: #0cbec8;
+$secondary-color: #0cbfc8bc;
 $third-color: rgba(246, 248, 254, 0.893);
 $forth-color: rgba(22, 81, 35, 0.88);
 $text-color: #253069;
@@ -51,6 +51,18 @@ $text-color: #253069;
     to {
         opacity: 1;
         transform: rotateX(0);
+    }
+}
+
+@keyframes transistionVid {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+
     }
 }
 

@@ -27,10 +27,11 @@ export default function ContactMe() {
 
 	return (
 		<section className="formcontainer" id="contact">
-			{/* <h1 className="h1">CONTACT ME</h1> */}
+			
 			<div className="contact_box">
+				<h1>Shoot Me An Email</h1>
 				<form className="form" onSubmit={sendEmail}>
-					<h1>Send Me An Email</h1>
+					
 					<input type="hidden" className="input" />
 					<label id="label">Enter Name</label>
 					<input type="text" name="user_name" />
@@ -40,7 +41,7 @@ export default function ContactMe() {
 					<textarea className="message" name="message" />
 					<input id="button" type="submit" value="Send" />
 				</form>
-				<div id="contact_icons">
+				{/* <div id="contact_icons">
 					<ExternalLink
 						className="link_contact"
 						href="https://www.linkedin.com/in/tryon-experiences"
@@ -72,7 +73,7 @@ export default function ContactMe() {
 							alt="technologies"
 						/>
 					</ExternalLink>
-				</div>
+				</div> */}
 			</div>
 		</section>
 	);

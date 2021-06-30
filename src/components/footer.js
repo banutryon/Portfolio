@@ -9,7 +9,7 @@ function Footer() {
 					<Link className="footerLinks">
 						<img
 							className="social"
-							src="/Icons/git.png"
+							src="/Icons/github.png"
 							alt="Github"
 							onClick={() =>
 								window.open(
@@ -52,48 +52,7 @@ function Footer() {
 							</Link>
 						</li> */}
 			</ul>
-			<ul>
-				<li>
-					<div>
-						CSS Icons made by{" "}
-						<a href="https://www.freepik.com" title="Freepik">
-							Freepik
-						</a>{" "}
-						from{" "}
-						<a href="https://www.flaticon.com/" title="Flaticon">
-							www.flaticon.com
-						</a>
-					</div>
-				</li>
-				<li>
-					<div>
-						HTML Icons made by{" "}
-						<a href="https://www.freepik.com" title="Freepik">
-							Freepik
-						</a>{" "}
-						from{" "}
-						<a href="https://www.flaticon.com/" title="Flaticon">
-							www.flaticon.com
-						</a>
-					</div>
-				</li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
+			
 		</>
 	);
 }

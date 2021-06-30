@@ -31,6 +31,24 @@
   }
 }
 
+@-webkit-keyframes transistionVid {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes transistionVid {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes transistionIn2 {
   from {
     opacity: .2;
