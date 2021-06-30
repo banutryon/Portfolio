@@ -69,7 +69,7 @@ function About() {
                 <a href="https://github.com/banutryon?tab=repositories"> <i className="fab fa-github fa-2x "></i></a>
                 <a className="resume" href="/resume.pdf" target="_newtab" download>
 					<img src="./icons/file.png" alt="resume" target="_newtab" download />
-					<p>Click to download Resume</p>
+					<p>Download Resume</p>
 				</a>
             </div>
 				</span>

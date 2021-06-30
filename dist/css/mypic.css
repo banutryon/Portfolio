@@ -31,9 +31,27 @@
   }
 }
 
-@-webkit-keyframes transistionIn2 {
+@-webkit-keyframes transistionVid {
   from {
     opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes transistionVid {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes transistionIn2 {
+  from {
+    opacity: .2;
     -webkit-transform: rotateY(80deg);
             transform: rotateY(80deg);
   }
@@ -46,7 +64,7 @@
 
 @keyframes transistionIn2 {
   from {
-    opacity: 0;
+    opacity: .2;
     -webkit-transform: rotateY(80deg);
             transform: rotateY(80deg);
   }
@@ -83,6 +101,88 @@
   }
 }
 
+@-webkit-keyframes transistionIn4 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 900px);
+            transform: translate(0, 900px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes transistionIn4 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 900px);
+            transform: translate(0, 900px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes transistionIn5 {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-50deg);
+            transform: rotateX(-50deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+@keyframes transistionIn5 {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-50deg);
+            transform: rotateX(-50deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  10% {
+    opacity: 1;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+@keyframes typing {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  10% {
+    opacity: 1;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
 .myPic {
   display: -ms-grid;
   display: grid;
@@ -90,23 +190,23 @@
       grid-template-columns: repeat(5, 1fr);
   -ms-grid-rows: 1fr 1rem auto;
       grid-template-rows: 1fr 1rem auto;
-  height: 15rem;
-  width: 13rem;
-  -webkit-box-shadow: 0.5rem -0.5rem 0 #0cbec8, 0 -0.5rem 0 #2f2f2f, -0.4rem -1rem 0 #d57106;
-          box-shadow: 0.5rem -0.5rem 0 #0cbec8, 0 -0.5rem 0 #2f2f2f, -0.4rem -1rem 0 #d57106;
+  height: 10rem;
+  width: 8rem;
+  -webkit-box-shadow: 0.5rem -0.5rem 0 #0cbfc8bc, 0 -0.5rem 0 #2f2f2f, -0.4rem -1rem 0 rgba(22, 81, 35, 0.88);
+          box-shadow: 0.5rem -0.5rem 0 #0cbfc8bc, 0 -0.5rem 0 #2f2f2f, -0.4rem -1rem 0 rgba(22, 81, 35, 0.88);
   -webkit-clip-path: circle(25%);
           clip-path: circle(25%);
   -webkit-animation: circle-grow 2000ms 450ms forwards;
           animation: circle-grow 2000ms 450ms forwards;
-  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(15%, #2f2f2f), to(transparent)), radial-gradient(circle at bottom right, transparent 5%, #d57106 5%, #d57106 20%, transparent 10%, transparent 22%, #d57106 20%, transparent 40%);
-  background-image: linear-gradient(to top right, #2f2f2f 15%, transparent), radial-gradient(circle at bottom right, transparent 5%, #d57106 5%, #d57106 20%, transparent 10%, transparent 22%, #d57106 20%, transparent 40%);
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(15%, #2f2f2f), to(transparent)), radial-gradient(circle at bottom right, transparent 5%, rgba(22, 81, 35, 0.88) 5%, rgba(22, 81, 35, 0.88) 20%, transparent 10%, transparent 22%, rgba(22, 81, 35, 0.88) 20%, transparent 40%);
+  background-image: linear-gradient(to top right, #2f2f2f 15%, transparent), radial-gradient(circle at bottom right, transparent 5%, rgba(22, 81, 35, 0.88) 5%, rgba(22, 81, 35, 0.88) 20%, transparent 10%, transparent 22%, rgba(22, 81, 35, 0.88) 20%, transparent 40%);
   float: right;
   margin: 1.25rem 1.5rem;
 }
 
 .myPic__Img {
-  height: 15rem;
-  width: 13rem;
+  height: 10rem;
+  width: 8rem;
   display: block;
   grid-column: 1 / -1;
   -ms-grid-row: 1;
@@ -165,8 +265,8 @@
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
-  background: -webkit-gradient(linear, right top, left bottom, color-stop(15%, #d57106), to(transparent));
-  background: linear-gradient(to bottom left, #d57106 15%, transparent);
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(15%, rgba(22, 81, 35, 0.88)), to(transparent));
+  background: linear-gradient(to bottom left, rgba(22, 81, 35, 0.88) 15%, transparent);
   mix-blend-mode: multiply;
   -webkit-clip-path: circle(10%);
           clip-path: circle(10%);

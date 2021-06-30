@@ -31,6 +31,24 @@
   }
 }
 
+@-webkit-keyframes transistionVid {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes transistionVid {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes transistionIn2 {
   from {
     opacity: .2;
@@ -85,10 +103,12 @@
 
 @-webkit-keyframes transistionIn4 {
   0% {
+    opacity: 0;
     -webkit-transform: translate(0, 900px);
             transform: translate(0, 900px);
   }
   100% {
+    opacity: 1;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
@@ -96,12 +116,40 @@
 
 @keyframes transistionIn4 {
   0% {
+    opacity: 0;
     -webkit-transform: translate(0, 900px);
             transform: translate(0, 900px);
   }
   100% {
+    opacity: 1;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes transistionIn5 {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-50deg);
+            transform: rotateX(-50deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+@keyframes transistionIn5 {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-50deg);
+            transform: rotateX(-50deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
   }
 }
 
@@ -145,15 +193,19 @@
   width: 90%;
   color: #2f2f2f;
   margin: 1.5rem auto 0 auto;
-  padding: .3rem;
+  padding: .1rem;
   display: none;
-  font-size: .9rem;
+  font-size: .8rem;
 }
 
 .about__bio .text-secondary {
   padding-bottom: 1rem;
   text-align: center;
   color: #253069;
+}
+
+.about p {
+  font-size: .8rem;
 }
 
 .about strong {
@@ -178,9 +230,9 @@
 }
 
 .about .skills__set h3 {
-  margin: .2rem 0;
+  margin: .1rem 0;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #253069;
 }
 
@@ -199,9 +251,9 @@
 
 .about .social-icons {
   display: none;
-  color: #0cbec8;
-  margin: 1rem 3rem;
-  font-size: 1.6rem;
+  color: #0cbfc8bc;
+  margin: .5rem 3rem;
+  font-size: 1.2rem;
 }
 
 .about .social-icons a {
@@ -224,13 +276,13 @@
 }
 
 .about .social-icons .resume img {
-  height: 3rem;
-  width: 3rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .about .social-icons .resume img:hover {
-  height: 3.6rem;
-  width: 3.6rem;
+  height: 2.2rem;
+  width: 2.2rem;
 }
 
 .about .social-icons .resume {
@@ -241,7 +293,7 @@
 }
 
 .about .social-icons .resume:hover {
-  color: #0cbec8;
+  color: #0cbfc8bc;
 }
 
 .about .fa-github {
@@ -279,7 +331,7 @@
   }
   .about .social-icons {
     display: none;
-    color: #0cbec8;
+    color: #0cbfc8bc;
     margin: 2rem 3rem;
     font-size: 2rem;
   }

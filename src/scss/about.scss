@@ -11,9 +11,9 @@
         width: 90%;
         color: $primary-color;
         margin: 1.5rem auto 0 auto;
-        padding: .3rem;
+        padding: .1rem;
         display: none;
-        font-size: .9rem;
+        font-size: .8rem;
 
         .text-secondary {
             padding-bottom: 1rem;
@@ -21,6 +21,12 @@
             color: $text-color;
 
         }
+
+
+    }
+
+    p {
+        font-size: .8rem;
     }
 
     strong {
@@ -44,9 +50,9 @@
             display: none;
 
             h3 {
-                margin: .2rem 0;
+                margin: .1rem 0;
                 text-align: center;
-                font-size: 1.4rem;
+                font-size: 1.2rem;
                 color: $text-color;
             }
         }
@@ -63,8 +69,8 @@
     .social-icons {
         display: none;
         color: $secondary-color;
-        margin: 1rem 3rem;
-        font-size: 1.6rem;
+        margin: .5rem 3rem;
+        font-size: 1.2rem;
 
 
         a {
@@ -80,13 +86,13 @@
         }
 
         .resume img {
-            height: 3rem;
-            width: 3rem;
+            height: 2rem;
+            width: 2rem;
         }
 
         .resume img:hover {
-            height: 3.6rem;
-            width: 3.6rem;
+            height: 2.2rem;
+            width: 2.2rem;
         }
 
         .resume {
