@@ -1,5 +1,5 @@
 $primary-color: #2f2f2f;
-$secondary-color: #0cbfc8bc;
+$secondary-color: #0bb2bb;
 $third-color: rgba(246, 248, 254, 0.893);
 $forth-color: rgba(22, 81, 35, 0.88);
 $text-color: #253069;
@@ -8,6 +8,7 @@ $text-color: #253069;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: iceland;
 }
 
 @mixin transition-ease {

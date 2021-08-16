@@ -44,18 +44,21 @@ function Navbar() {
 	};
 
 	window.addEventListener("scroll", changeBackground);
-	window.addEventListener("scrollLogo", changeLogo);
+	// window.addEventListener("scrollLogo", changeLogo);
 	window.addEventListener("close", closeMobileMenu);
 	return (
 		<>
 			<nav className={navbar ? "nav scroll" : "nav"}>
 				<div className="navContainer">
-					<Link className="navLogo scrollLogo">
-						<img
+					<Link
+						className="navLogo scrollLogo"
+						onClick={() => scroll.scrollToTop()}
+					>
+						{/* <img
 							className={
 								logo ? "navImg logoWhite scrollLogo" : "navImg logoWhite"
 							}
-							src="/newLogo.png"
+							src="/logo.png"
 							alt="Logo"
 							onClick={() => scroll.scrollToTop()}
 						/>
@@ -66,7 +69,8 @@ function Navbar() {
 							src="/logoHover.png"
 							alt="Logo"
 							onClick={() => scroll.scrollToTop()}
-						/>
+						/> */}
+						Tryon Experiences
 					</Link>
 					<div
 						id="mainListdiv"

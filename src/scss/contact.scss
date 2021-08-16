@@ -46,7 +46,7 @@
     font-weight: 700;
     color: #45484a;
     outline: none;
-    width: 300px;
+    width: 70vw;
     display: block;
     margin: 15px auto;
 
@@ -55,11 +55,11 @@
 .input:focus,
 textarea:focus {
     outline: none;
-    width: 300px;
+    width: 70vw;
 }
 
 .message {
-    width: 300px;
+    width: 70vw;
     padding: 30px;
     min-height: 100px;
     display: block;
