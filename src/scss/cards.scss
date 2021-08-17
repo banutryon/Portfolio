@@ -207,28 +207,18 @@
             // width: 60vw;
         }
 
-        &__ItemVid {
-            // width: 75%;
-            // max-width: 645px;
-            // min-height: 190px;
-            // max-height: 440px;
-
-        }
-
-        // &__vid2 {
-        //     margin-top: 15px;
-        //     margin-bottom: 18px;
-        //     min-height: 420px;
-        //     max-height: 400px;
-        // }
 
         &__ItemInfo {
             max-width: 600px;           
         
         }
 
-
+        &__h4 {
+            font-size: clamp(1rem, 2vw, 1.8rem);
+            
+ }
         &__h5 {
+            font-size: clamp(1rem, 2vw, 1.6rem);
             line-height: 20px;
         }
     }
