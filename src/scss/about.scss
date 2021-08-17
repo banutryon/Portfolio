@@ -10,12 +10,14 @@
     &__bio {
         width: 90%;
         color: $primary-color;
-        margin: 1.5rem auto 0 auto;
+        margin: 1.5rem auto 1rem auto;
         padding: .1rem;
         display: none;
-        font-size: clamp(1.6rem, 10vw, 2.5rem);
+        
 
         .text-secondary {
+            font-size: clamp(1.6rem, 10vw, 3.5rem);
+            font-family: iceland;
             padding-bottom: 1rem;
             text-align: center;
             color: $text-color;
@@ -23,7 +25,7 @@
     }
 
     p {
-       font-size: clamp(.9rem, 2.2vw, 1.8rem);
+       font-size: clamp(.9rem, 2.2vw, 1.4rem);
        margin-bottom: 15px;
     }
 
@@ -40,7 +42,7 @@
 
     .skills {
         width: 90vw;
-        margin: .5rem auto 0 auto;
+        margin: .5rem auto 1rem auto;
         text-align: center;
 
         &__set {
@@ -51,11 +53,13 @@
                 margin: .1rem 0;
                 text-align: center;
                 font-size: clamp(1.2rem, 2.5vw, 2rem);
+                font-family: iceland;
                 color: $text-color;
             }
 
             p {
-                font-size: clamp(.9rem, 2vw, 1.8rem);
+                font-size: clamp(.9rem, 2vw, 1.4rem);
+                color: $primary-color;
             }
         }
 

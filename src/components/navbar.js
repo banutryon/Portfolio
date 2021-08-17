@@ -12,7 +12,7 @@ function Navbar() {
 		$(".navTrigger").one("click", function () {
 			$(".main_list").toggleClass("show_list");
 			$(this).toggleClass("active");
-			$("#mainListDiv").fadeIn();
+			// $("#mainListDiv").fadeIn();
 		});
 	};
 	const hambuger2 = () => {
@@ -22,11 +22,11 @@ function Navbar() {
 			$("#mainListDiv").fadeIn();
 		});
 	};
-	const closeMobileMenu = () => {
-		setClick(!click);
-		// let x = document.querySelector(".navTrigger");
-		// x.toggleClass("active");
-	};
+	// const closeMobileMenu = () => {
+	// 	setClick(!click);
+	// 	let x = document.querySelector(".navTrigger");
+	// 	x.toggleClass("active");
+	// };
 
 	const changeBackground = () => {
 		if (window.scrollY >= 50) {
@@ -44,8 +44,8 @@ function Navbar() {
 	};
 
 	window.addEventListener("scroll", changeBackground);
-	// window.addEventListener("scrollLogo", changeLogo);
-	window.addEventListener("close", closeMobileMenu);
+	window.addEventListener("scrollLogo", changeLogo);
+	// window.addEventListener("close", closeMobileMenu);
 	return (
 		<>
 			<nav className={navbar ? "nav scroll" : "nav"}>

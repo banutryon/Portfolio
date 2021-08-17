@@ -72,17 +72,19 @@ function About() {
 					<div className={skill ? "skills__set skills__scroll" : "skills__set"}>
 						<h3 className="text-secondary">2. Design</h3>
 						<p>
-							Become a subject matter expert after doing a thorough assessment
-							of the clients needs. Determine methods to address the specific
-							must haves of the customer.{" "}
+							Design applications with a customer first approach. Apply the
+							needs discovered while maintaining a user friendly experience.
+							Start with mobile first but plan to make everything fully
+							responsive.{" "}
 						</p>
 					</div>
 					<div className={skill ? "skills__set skills__scroll" : "skills__set"}>
 						<h3 className="text-secondary">3. Develop</h3>
 						<p>
-							Become a subject matter expert after doing a thorough assessment
-							of the clients needs. Determine methods to address the specific
-							must haves of the customer.{" "}
+							Write readable clean code, break down big tasks into smaller
+							chunks while focusing on completing MVP first. Make sure to Test,
+							Test and Test some more. If you are not getting bugs you are not
+							pushing yourself to create unique content.{" "}
 						</p>
 					</div>
 				</div>

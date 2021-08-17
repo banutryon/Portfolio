@@ -70,12 +70,12 @@ function Cards() {
 							</ExternalLink>
 							<div className="card__ItemInfo">
 								<h4 className="card__h4">Ecommerce app</h4>
-								<h5 className="card__h5">
+								<p className="card__p">
 									Built using React, Redux, JavaScript, and SASS styling. This
 									app has full CRUD and authentication with admin, seller and
 									buyer login access. Google map API integration for address
 									input at checkout and Implemented Order Payment with Paypal.
-								</h5>
+								</p>
 							</div>
 							<div className={icon ? "link_div icon__scroll" : "link_div"}>
 								<div className="git_link">
@@ -126,11 +126,11 @@ function Cards() {
 							</ExternalLink>
 							<div className="card__ItemInfo">
 								<h4 className="card__h4">Full CRUD</h4>
-								<h5 className="card__h5">
+								<p className="card__p">
 									Built using Node.js, Mongoose, Express and EJS. This is a tour
 									guide website with full CRUD and authentication. Also all
 									photos of this app were taken by yours truly.
-								</h5>
+								</p>
 							</div>
 							<div className={icon ? "link_div icon__scroll" : "link_div"}>
 								<div className="git_link">
@@ -185,12 +185,12 @@ function Cards() {
 							</ExternalLink>
 							<div className="card__ItemInfo">
 								<h4 className="card__h4">MERN stack</h4>
-								<h5 className="card__h5">
+								<p className="card__p">
 									Built using Node.js, Mongoose, Express and React. With full
 									CRUD and a custom built API Memeball works like a typical
 									magic 8 Ball. Click the ask a question button and see your
 									answer.
-								</h5>
+								</p>
 							</div>
 							<div className={icon ? "link_div icon__scroll" : "link_div"}>
 								<div className="git_link">
@@ -241,11 +241,11 @@ function Cards() {
 							</ExternalLink>
 							<div className="card__ItemInfo">
 								<h4 className="card__h4">Restful API</h4>
-								<h5 className="card__h5">
+								<p className="card__p">
 									Built with HTML, CSS, JavaScript and jQuery. This is my first
 									website I created. It pulls data from a Marvel API to create a
 									info deck of your favorite marvel characters.
-								</h5>
+								</p>
 							</div>
 							<div className={icon ? "link_div icon__scroll" : "link_div"}>
 								<div className="git_link">
@@ -302,12 +302,12 @@ function Cards() {
 								</ExternalLink>
 								<div className="card__ItemInfo">
 									<h4 className="card__h4">MERRN stack</h4>
-									<h5 className="card__h5">
+									<p className="card__p">
 										Built using Node.js, Mongoose, React and Redux. I created
 										this Tesla range calculator due to my passion for Tesla.
 										This app has a custom build api with over 600 lines using
 										mongoose and node.js for the backend.
-									</h5>
+									</p>
 								</div>
 								<div className={icon ? "link_div icon__scroll" : "link_div"}>
 									<div className="git_link">

@@ -9,7 +9,8 @@
 .h_1 {
     text-align: center;
     padding: 2em 0 1em 0;
-    font-size: 30px;
+    font-size: clamp(1.6rem, 10vw, 3.5rem);
+    font-family: iceland;
     margin-bottom: 20px;
     color: $text-color;
 
@@ -127,12 +128,13 @@
 
     &__h4 {
         font-size: clamp(1rem, 2vw, 1.2rem);
+        font-family: iceland;
         color: $text-color;
         margin-top: 5px;
     }
 
     &__h5 {
-        color: $text-color;
+        
         font-size: clamp(0.65rem, 1.5vw, 1rem);
         
         line-height: 10px;
@@ -214,12 +216,14 @@
         }
 
         &__h4 {
-            font-size: clamp(1rem, 2vw, 1.8rem);
+            font-size: clamp(1rem, 2vw, 2.5rem);
             
  }
-        &__h5 {
-            font-size: clamp(1rem, 2vw, 1.6rem);
+        &__p {
+            font-size: clamp(1rem, 2vw, .8rem);
             line-height: 20px;
+            color: $primary-color;
+            
         }
     }
 

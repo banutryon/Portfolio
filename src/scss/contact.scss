@@ -11,7 +11,8 @@
     margin-top: 90px;
     text-align: center;
     color: $text-color;
-    font-size: 24px;
+    font-size: clamp(1.6rem, 10vw, 3.5rem);
+    font-family: iceland;
 }
 
 .form {
@@ -36,24 +37,26 @@
 
 
 .form>input {
-    padding-top: 10px;
+    padding: 10px;
     border-radius: 3px;
     margin-bottom: 20px;
     border: 1px solid lightgray;
     box-shadow: 2px 2px 10px 2px rgba(28, 28, 28, 0.229);
     background: rgb(255, 255, 255);
     font-size: 16px;
-    font-weight: 700;
+    
     color: #45484a;
     outline: none;
     width: 70vw;
     display: block;
     margin: 15px auto;
+    text-align: center;
 
 }
 
 .input:focus,
 textarea:focus {
+    padding: 10px;
     outline: none;
     width: 70vw;
 }
@@ -67,13 +70,13 @@ textarea:focus {
     margin: 5px auto;
     border: none;
     box-shadow: 2px 2px 10px 2px rgba(28, 28, 28, 0.229);
-
+    text-align: center;
 }
 
 .form>#label {
     padding-bottom: 10px;
     color: $primary-color;
-    font-weight: bold;
+   
     text-align: center;
 }
 
@@ -125,7 +128,7 @@ textarea:focus {
 /* ===================================== */
 /* ===================================== */
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 900px) {
 
 
     .contact_box>h1 {
@@ -133,18 +136,21 @@ textarea:focus {
     }
 
     .form {
-        width: 50vw;
+       
+        max-width:800px;
     }
 
     .form>input {
-        padding: 20px;
+        
         font-size: 1.2rem;
-        width: 600px;
+        
+         max-width:750px;
     }
 
 
     .message {
-        width: 600px;
+        
+         max-width:750px;
     }
 
     .form>#label {
