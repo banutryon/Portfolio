@@ -6,12 +6,13 @@
     background-color: $third-color;
     height: 100vh;
     position: relative;
+    padding: 8rem 0 2rem 0;
 
 
     &__h1 {
         
         text-align: center;
-        padding-top: 100px;
+        
         font-size: clamp(1.6rem, 10vw, 3.5rem);
         font-family: iceland;
         color: $text-color;
